@@ -1,20 +1,21 @@
 using System;
 using System.Collections.Generic;
+using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class DraggableComponent : MonoBehaviour, IInitializePotentialDragHandler, IBeginDragHandler, IDragHandler, IEndDragHandler {
-    public event Action<PointerEventData> OnBeginDragHandler;
-    public event Action<PointerEventData> OnDragHandler;
-    public event Action<PointerEventData, bool> OnEndDragHandler;
-
-    public bool FollorCursor { get; set; } = true;
-    public bool CanDrag { get; set; } = true;
-    public Vector3 StartPosition;
-    public Transform StartParent;
-
-    [SerializeField] protected RectTransform rectTransform;
-    [SerializeField] protected Canvas canvas;
+    [FoldoutGroup("Dynamic-Debug")] public event Action<PointerEventData> OnBeginDragHandler;
+    [FoldoutGroup("Dynamic-Debug")] public event Action<PointerEventData> OnDragHandler;
+    [FoldoutGroup("Dynamic-Debug")] public event Action<PointerEventData, bool> OnEndDragHandler;
+    [FoldoutGroup("Dynamic-Debug")] public bool FollorCursor { get; set; } = true;
+    [FoldoutGroup("Dynamic-Debug")] public bool CanDrag { get; set; } = true;
+    [FoldoutGroup("Dynamic-Debug")] public Vector3 startPosition;
+    [FoldoutGroup("Dynamic-Debug")] public Transform startParent;
+    [FoldoutGroup("Dynamic-Debug")] [SerializeField]
+    protected RectTransform rectTransform;
+    [FoldoutGroup("Dynamic-Debug")] [SerializeField]
+    protected Canvas canvas;
 
     protected virtual void Awake() {
         rectTransform = GetComponent<RectTransform>();
@@ -64,13 +65,13 @@ public class DraggableComponent : MonoBehaviour, IInitializePotentialDragHandler
             }
         }
 
-        transform.parent = StartParent;
-        rectTransform.anchoredPosition = StartPosition;
+        transform.SetParent(startParent);
+        rectTransform.anchoredPosition = startPosition;
         OnEndDragHandler?.Invoke(eventData, false);
     }
 
     public void OnInitializePotentialDrag(PointerEventData eventData) {
-        StartPosition = rectTransform.anchoredPosition;
-        StartParent = transform.parent;
+        startPosition = rectTransform.anchoredPosition;
+        startParent = transform.parent;
     }
 }

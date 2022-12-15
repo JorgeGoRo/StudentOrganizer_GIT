@@ -4,7 +4,7 @@ using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class SubtopicItem : DraggableComponent {
+public class  SubtopicItem : DraggableComponent {
     
   
     

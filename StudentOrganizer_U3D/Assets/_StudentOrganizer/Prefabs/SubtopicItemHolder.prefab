@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3231059212476170145}
   - component: {fileID: -5466576137646096057}
+  - component: {fileID: 7197653702795839991}
   m_Layer: 5
-  m_Name: SubtopicItem
+  m_Name: SubtopicItemHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51,9 +52,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84091b4eba3532e4db471188711b704d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartPosition: {x: 0, y: 0, z: 0}
-  _rectTransform: {fileID: 0}
-  _canvas: {fileID: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  startParent: {fileID: 0}
+  rectTransform: {fileID: 0}
+  canvas: {fileID: 0}
+--- !u!114 &7197653702795839991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3231059212476170144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d40336d3f4754c4e9d2247cbfd2e96c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 3231059212590415251}
 --- !u!1 &3231059212590415260
 GameObject:
   m_ObjectHideFlags: 0
