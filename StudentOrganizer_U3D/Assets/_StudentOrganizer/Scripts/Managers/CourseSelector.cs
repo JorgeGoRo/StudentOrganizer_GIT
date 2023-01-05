@@ -1,11 +1,6 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using Doozy.Runtime.UIManager.Components;
-using Doozy.Runtime.UIManager.Events;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class CourseSelector : BaseManager {
 

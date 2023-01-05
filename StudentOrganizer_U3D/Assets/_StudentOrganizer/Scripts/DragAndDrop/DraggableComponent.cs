@@ -12,8 +12,10 @@ public class DraggableComponent : MonoBehaviour, IInitializePotentialDragHandler
     [FoldoutGroup("Dynamic-Debug")] public bool CanDrag { get; set; } = true;
     [FoldoutGroup("Dynamic-Debug")] public Vector3 startPosition;
     [FoldoutGroup("Dynamic-Debug")] public Transform startParent;
+
     [FoldoutGroup("Dynamic-Debug")] [SerializeField]
     protected RectTransform rectTransform;
+
     [FoldoutGroup("Dynamic-Debug")] [SerializeField]
     protected Canvas canvas;
 

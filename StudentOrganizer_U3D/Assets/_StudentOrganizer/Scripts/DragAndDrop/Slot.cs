@@ -12,7 +12,7 @@ public class Slot : MonoBehaviour {
         DropArea.OnDropHandler += OnItemDropped;
     }
 
-    private void OnItemDropped(DraggableComponent draggable) {
+    protected virtual void OnItemDropped(DraggableComponent draggable) {
         draggable.transform.position = transform.position;
         draggable.transform.SetParent(transform);
     }
