@@ -1,0 +1,1810 @@
+{
+    "isNewFile": false,
+    "courses": [
+        {
+            "name": "Programación y robótica para docentes",
+            "topics": [
+                {
+                    "topicName": "Tema 1",
+                    "subTopics": [
+                        {
+                            "name": "1.1",
+                            "week": 0,
+                            "description": "Por qué introducir la programación en el aula",
+                            "courseID": 0,
+                            "topicID": 0,
+                            "subtopicID": 0,
+                            "keyIdeaIndex": 0,
+                            "isKeyIdea": true,
+                            "studyStrategy": 1,
+                            "stimatedTime": 10,
+                            "satisfaction": 0
+                        },
+                        {
+                            "name": "1.2",
+                            "week": 0,
+                            "description": "Por qué trabajar con robótica educativa",
+                            "courseID": 0,
+                            "topicID": 0,
+                            "subtopicID": 1,
+                            "keyIdeaIndex": 1,
+                            "isKeyIdea": true,
+                            "studyStrategy": 2,
+                            "stimatedTime": 20,
+                            "satisfaction": 1
+                        },
+                        {
+                            "name": "1.3",
+                            "week": -1,
+                            "description": "El pensamiento computacional",
+                            "courseID": 0,
+                            "topicID": 0,
+                            "subtopicID": 2,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        }
+                    ],
+                    "courseID": 0
+                },
+                {
+                    "topicName": "Tema 2",
+                    "subTopics": [
+                        {
+                            "name": "2.1",
+                            "week": 1,
+                            "description": "Algoritmos y diagramas de flujo",
+                            "courseID": 0,
+                            "topicID": 1,
+                            "subtopicID": 0,
+                            "keyIdeaIndex": 0,
+                            "isKeyIdea": true,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "2.2",
+                            "week": 1,
+                            "description": "Estructuración y organización de algoritmos",
+                            "courseID": 0,
+                            "topicID": 1,
+                            "subtopicID": 1,
+                            "keyIdeaIndex": 1,
+                            "isKeyIdea": true,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "2.3",
+                            "week": -1,
+                            "description": "Instrucciones de control",
+                            "courseID": 0,
+                            "topicID": 1,
+                            "subtopicID": 2,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        }
+                    ],
+                    "courseID": 0
+                },
+                {
+                    "topicName": "Tema 3",
+                    "subTopics": [
+                        {
+                            "name": "3.1",
+                            "week": 4,
+                            "description": "Introducción a la programa por bloques",
+                            "courseID": 0,
+                            "topicID": 2,
+                            "subtopicID": 0,
+                            "keyIdeaIndex": 0,
+                            "isKeyIdea": true,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "3.2",
+                            "week": -1,
+                            "description": "ScratchJR",
+                            "courseID": 0,
+                            "topicID": 2,
+                            "subtopicID": 1,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "3.3",
+                            "week": -1,
+                            "description": "Primeros pasos con Scratch",
+                            "courseID": 0,
+                            "topicID": 2,
+                            "subtopicID": 2,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "3.4",
+                            "week": -1,
+                            "description": "Programación con Scratch",
+                            "courseID": 0,
+                            "topicID": 2,
+                            "subtopicID": 3,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "3.5",
+                            "week": -1,
+                            "description": "Scratch en educación",
+                            "courseID": 0,
+                            "topicID": 2,
+                            "subtopicID": 4,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "3.6",
+                            "week": -1,
+                            "description": "Control de un robot con Scratch",
+                            "courseID": 0,
+                            "topicID": 2,
+                            "subtopicID": 5,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "Act1",
+                            "week": -1,
+                            "description": "Scratch: Crear una animación educativa",
+                            "courseID": 0,
+                            "topicID": 2,
+                            "subtopicID": 6,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        }
+                    ],
+                    "courseID": 0
+                },
+                {
+                    "topicName": "Tema 4",
+                    "subTopics": [
+                        {
+                            "name": "4.1",
+                            "week": -1,
+                            "description": "Las aplicaciones como herramientas de aprendizaje",
+                            "courseID": 0,
+                            "topicID": 3,
+                            "subtopicID": 0,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "4.2",
+                            "week": -1,
+                            "description": "Introducción a App Inventor",
+                            "courseID": 0,
+                            "topicID": 3,
+                            "subtopicID": 1,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        }
+                    ],
+                    "courseID": 0
+                },
+                {
+                    "topicName": "Tema 5",
+                    "subTopics": [
+                        {
+                            "name": "5.1",
+                            "week": -1,
+                            "description": "Sistema de control",
+                            "courseID": 0,
+                            "topicID": 4,
+                            "subtopicID": 0,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "5.2",
+                            "week": -1,
+                            "description": "Actuadores",
+                            "courseID": 0,
+                            "topicID": 4,
+                            "subtopicID": 1,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "5.3",
+                            "week": -1,
+                            "description": "Sensores",
+                            "courseID": 0,
+                            "topicID": 4,
+                            "subtopicID": 2,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        }
+                    ],
+                    "courseID": 0
+                },
+                {
+                    "topicName": "Tema 6",
+                    "subTopics": [
+                        {
+                            "name": "6.1",
+                            "week": -1,
+                            "description": "Robots básicos para crear secuencias",
+                            "courseID": 0,
+                            "topicID": 5,
+                            "subtopicID": 0,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "6.2",
+                            "week": -1,
+                            "description": "Robots cerrados para programar",
+                            "courseID": 0,
+                            "topicID": 5,
+                            "subtopicID": 1,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "6.3",
+                            "week": -1,
+                            "description": "Kits de robótica y robots abiertos",
+                            "courseID": 0,
+                            "topicID": 5,
+                            "subtopicID": 2,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "6.4",
+                            "week": -1,
+                            "description": "Simuladores",
+                            "courseID": 0,
+                            "topicID": 5,
+                            "subtopicID": 3,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "Act2",
+                            "week": -1,
+                            "description": "Labsland: creación de un robot siguelíneas",
+                            "courseID": 0,
+                            "topicID": 5,
+                            "subtopicID": 4,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        }
+                    ],
+                    "courseID": 0
+                },
+                {
+                    "topicName": "Tema 7",
+                    "subTopics": [
+                        {
+                            "name": "7.1",
+                            "week": -1,
+                            "description": "STEAM como modelo de aprendizaje",
+                            "courseID": 0,
+                            "topicID": 6,
+                            "subtopicID": 0,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "7.2",
+                            "week": -1,
+                            "description": "STEAM como herramienta para resolución de problemas",
+                            "courseID": 0,
+                            "topicID": 6,
+                            "subtopicID": 1,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "7.3",
+                            "week": -1,
+                            "description": "Creación de propuestas didácticas que integran STEAM",
+                            "courseID": 0,
+                            "topicID": 6,
+                            "subtopicID": 2,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "Act3",
+                            "week": -1,
+                            "description": "Foro Creación de propuesta STEAM",
+                            "courseID": 0,
+                            "topicID": 6,
+                            "subtopicID": 3,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        }
+                    ],
+                    "courseID": 0
+                },
+                {
+                    "topicName": "Tema 8",
+                    "subTopics": [
+                        {
+                            "name": "8.1",
+                            "week": -1,
+                            "description": "Introducción al IoT",
+                            "courseID": 0,
+                            "topicID": 7,
+                            "subtopicID": 0,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "8.2",
+                            "week": -1,
+                            "description": "Aplicaciones del IoT",
+                            "courseID": 0,
+                            "topicID": 7,
+                            "subtopicID": 1,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "8.3",
+                            "week": -1,
+                            "description": "Arduino y el IoT",
+                            "courseID": 0,
+                            "topicID": 7,
+                            "subtopicID": 2,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        }
+                    ],
+                    "courseID": 0
+                }
+            ],
+            "courseID": 0
+        },
+        {
+            "name": "Emprendimiento",
+            "topics": [
+                {
+                    "topicName": "Tema 1",
+                    "subTopics": [
+                        {
+                            "name": "1.1",
+                            "week": 0,
+                            "description": "El emprendimiento en el siglo XXI",
+                            "courseID": 1,
+                            "topicID": 0,
+                            "subtopicID": 0,
+                            "keyIdeaIndex": 2,
+                            "isKeyIdea": true,
+                            "studyStrategy": 3,
+                            "stimatedTime": 30,
+                            "satisfaction": 2
+                        },
+                        {
+                            "name": "1.2",
+                            "week": 0,
+                            "description": "Educar para emprender",
+                            "courseID": 1,
+                            "topicID": 0,
+                            "subtopicID": 1,
+                            "keyIdeaIndex": 3,
+                            "isKeyIdea": true,
+                            "studyStrategy": 5,
+                            "stimatedTime": 45,
+                            "satisfaction": 1
+                        },
+                        {
+                            "name": "1.3",
+                            "week": -1,
+                            "description": "La competencia emprendedora",
+                            "courseID": 1,
+                            "topicID": 0,
+                            "subtopicID": 2,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        }
+                    ],
+                    "courseID": 1
+                },
+                {
+                    "topicName": "Tema 2",
+                    "subTopics": [
+                        {
+                            "name": "2.1",
+                            "week": 2,
+                            "description": "Competencias del área <Ideas y oportunidades>",
+                            "courseID": 1,
+                            "topicID": 1,
+                            "subtopicID": 0,
+                            "keyIdeaIndex": 0,
+                            "isKeyIdea": true,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "2.2",
+                            "week": 2,
+                            "description": "Competencias del área <Recursos>",
+                            "courseID": 1,
+                            "topicID": 1,
+                            "subtopicID": 1,
+                            "keyIdeaIndex": 1,
+                            "isKeyIdea": true,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "2.3",
+                            "week": -1,
+                            "description": "Competencias del área <En acción>",
+                            "courseID": 1,
+                            "topicID": 1,
+                            "subtopicID": 2,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        }
+                    ],
+                    "courseID": 1
+                },
+                {
+                    "topicName": "Tema 3",
+                    "subTopics": [
+                        {
+                            "name": "3.1",
+                            "week": 4,
+                            "description": "Estrategias cognitivas",
+                            "courseID": 1,
+                            "topicID": 2,
+                            "subtopicID": 0,
+                            "keyIdeaIndex": 1,
+                            "isKeyIdea": true,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "3.2",
+                            "week": -1,
+                            "description": "Estrategias metacognitivas",
+                            "courseID": 1,
+                            "topicID": 2,
+                            "subtopicID": 1,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "3.3",
+                            "week": -1,
+                            "description": "Estrategias para la gestión emocional",
+                            "courseID": 1,
+                            "topicID": 2,
+                            "subtopicID": 2,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        }
+                    ],
+                    "courseID": 1
+                },
+                {
+                    "topicName": "Tema 4",
+                    "subTopics": [
+                        {
+                            "name": "4.1",
+                            "week": -1,
+                            "description": "El emprendimiento a través de la creación de un proyecto",
+                            "courseID": 1,
+                            "topicID": 3,
+                            "subtopicID": 0,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "4.2",
+                            "week": -1,
+                            "description": "Fases de un proyecto",
+                            "courseID": 1,
+                            "topicID": 3,
+                            "subtopicID": 1,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "4.3",
+                            "week": -1,
+                            "description": "Proyectos emprendedores en educación",
+                            "courseID": 1,
+                            "topicID": 3,
+                            "subtopicID": 2,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "Act1",
+                            "week": -1,
+                            "description": "Web para guiar la elaboración de un proyecto emprendedor",
+                            "courseID": 1,
+                            "topicID": 3,
+                            "subtopicID": 3,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        }
+                    ],
+                    "courseID": 1
+                },
+                {
+                    "topicName": "Tema 5",
+                    "subTopics": [
+                        {
+                            "name": "5.1",
+                            "week": -1,
+                            "description": "Beneficios del uso de métodos ágiles en educación",
+                            "courseID": 1,
+                            "topicID": 4,
+                            "subtopicID": 0,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "5.2",
+                            "week": -1,
+                            "description": "Método Lean",
+                            "courseID": 1,
+                            "topicID": 4,
+                            "subtopicID": 1,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "5.3",
+                            "week": -1,
+                            "description": "Scrum",
+                            "courseID": 1,
+                            "topicID": 4,
+                            "subtopicID": 2,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "5.4",
+                            "week": -1,
+                            "description": "Kanban",
+                            "courseID": 1,
+                            "topicID": 4,
+                            "subtopicID": 3,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        }
+                    ],
+                    "courseID": 1
+                },
+                {
+                    "topicName": "Tema 6",
+                    "subTopics": [
+                        {
+                            "name": "6.1",
+                            "week": -1,
+                            "description": "Beneficios de implantar un ecosistema emprendedor",
+                            "courseID": 1,
+                            "topicID": 5,
+                            "subtopicID": 0,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "6.2",
+                            "week": -1,
+                            "description": "Pautas para crear un ecosistema emprendedor en la escuela",
+                            "courseID": 1,
+                            "topicID": 5,
+                            "subtopicID": 1,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "6.3",
+                            "week": -1,
+                            "description": "Ejemplos de ecosistemas emprendedores",
+                            "courseID": 1,
+                            "topicID": 5,
+                            "subtopicID": 2,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "Act2",
+                            "week": -1,
+                            "description": "Diseño de un espacio para el emprendimiento",
+                            "courseID": 1,
+                            "topicID": 5,
+                            "subtopicID": 3,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        }
+                    ],
+                    "courseID": 1
+                },
+                {
+                    "topicName": "Tema 7",
+                    "subTopics": [
+                        {
+                            "name": "7.1",
+                            "week": -1,
+                            "description": "El emprendimiento social",
+                            "courseID": 1,
+                            "topicID": 6,
+                            "subtopicID": 0,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "7.2",
+                            "week": -1,
+                            "description": "La técnica de Aprendizaje-Servicio",
+                            "courseID": 1,
+                            "topicID": 6,
+                            "subtopicID": 1,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "7.3",
+                            "week": -1,
+                            "description": "Aprendizaje-Servicio en el aula",
+                            "courseID": 1,
+                            "topicID": 6,
+                            "subtopicID": 2,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "7.4",
+                            "week": -1,
+                            "description": "Iniciativas exitosas con ApS",
+                            "courseID": 1,
+                            "topicID": 6,
+                            "subtopicID": 3,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "Act3",
+                            "week": -1,
+                            "description": "Caso grupal: Proyecto de ApS para mejorar nuestros centros educativos",
+                            "courseID": 1,
+                            "topicID": 6,
+                            "subtopicID": 4,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        }
+                    ],
+                    "courseID": 1
+                },
+                {
+                    "topicName": "Tema 8",
+                    "subTopics": [
+                        {
+                            "name": "8.1",
+                            "week": -1,
+                            "description": "Innovación, emprendimiento y creatividad",
+                            "courseID": 1,
+                            "topicID": 7,
+                            "subtopicID": 0,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "8.2",
+                            "week": -1,
+                            "description": "Características y tipo de innovación",
+                            "courseID": 1,
+                            "topicID": 7,
+                            "subtopicID": 1,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "8.3",
+                            "week": -1,
+                            "description": "Innovación educativa con tecnología",
+                            "courseID": 1,
+                            "topicID": 7,
+                            "subtopicID": 2,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        }
+                    ],
+                    "courseID": 1
+                },
+                {
+                    "topicName": "Tema 9",
+                    "subTopics": [
+                        {
+                            "name": "9.1",
+                            "week": -1,
+                            "description": "Creatividad y resolución de problemas",
+                            "courseID": 1,
+                            "topicID": 8,
+                            "subtopicID": 0,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "9.2",
+                            "week": -1,
+                            "description": "Creatividad y diseño de un producto",
+                            "courseID": 1,
+                            "topicID": 8,
+                            "subtopicID": 1,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "9.3",
+                            "week": -1,
+                            "description": "Creatividad digital",
+                            "courseID": 1,
+                            "topicID": 8,
+                            "subtopicID": 2,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        }
+                    ],
+                    "courseID": 1
+                }
+            ],
+            "courseID": 1
+        },
+        {
+            "name": "Neurociencia",
+            "topics": [
+                {
+                    "topicName": "Tema 1",
+                    "subTopics": [
+                        {
+                            "name": "1.1",
+                            "week": 0,
+                            "description": "Neurociencia educativa",
+                            "courseID": 2,
+                            "topicID": 0,
+                            "subtopicID": 0,
+                            "keyIdeaIndex": 4,
+                            "isKeyIdea": true,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "1.2",
+                            "week": 0,
+                            "description": "Bases neuropsicológicas",
+                            "courseID": 2,
+                            "topicID": 0,
+                            "subtopicID": 1,
+                            "keyIdeaIndex": 5,
+                            "isKeyIdea": true,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "1.3",
+                            "week": -1,
+                            "description": "La entrada de la información en el cerebro",
+                            "courseID": 2,
+                            "topicID": 0,
+                            "subtopicID": 2,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "1.4",
+                            "week": -1,
+                            "description": "La funcionalidad visual",
+                            "courseID": 2,
+                            "topicID": 0,
+                            "subtopicID": 3,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "1.5",
+                            "week": -1,
+                            "description": "La funcionalidad auditiva",
+                            "courseID": 2,
+                            "topicID": 0,
+                            "subtopicID": 4,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "1.6",
+                            "week": -1,
+                            "description": "Desarrollo táctil",
+                            "courseID": 2,
+                            "topicID": 0,
+                            "subtopicID": 5,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "1.7",
+                            "week": -1,
+                            "description": "El procesamiento de la información en el cerebro",
+                            "courseID": 2,
+                            "topicID": 0,
+                            "subtopicID": 6,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "1.8",
+                            "week": -1,
+                            "description": "La integración sensorial y el aprendizaje",
+                            "courseID": 2,
+                            "topicID": 0,
+                            "subtopicID": 7,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        }
+                    ],
+                    "courseID": 2
+                },
+                {
+                    "topicName": "Tema 2",
+                    "subTopics": [
+                        {
+                            "name": "2.1",
+                            "week": 3,
+                            "description": "El porqué de un cambio metodológico",
+                            "courseID": 2,
+                            "topicID": 1,
+                            "subtopicID": 0,
+                            "keyIdeaIndex": 0,
+                            "isKeyIdea": true,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "2.2",
+                            "week": 3,
+                            "description": "Elementos claves para el cambio metodológico",
+                            "courseID": 2,
+                            "topicID": 1,
+                            "subtopicID": 1,
+                            "keyIdeaIndex": 1,
+                            "isKeyIdea": true,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "2.3",
+                            "week": -1,
+                            "description": "El modelo CAIT",
+                            "courseID": 2,
+                            "topicID": 1,
+                            "subtopicID": 2,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "2.4",
+                            "week": -1,
+                            "description": "El modelo TPACK",
+                            "courseID": 2,
+                            "topicID": 1,
+                            "subtopicID": 3,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "2.5",
+                            "week": -1,
+                            "description": "Propuestas para el cambio",
+                            "courseID": 2,
+                            "topicID": 1,
+                            "subtopicID": 4,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        }
+                    ],
+                    "courseID": 2
+                },
+                {
+                    "topicName": "Tema 3",
+                    "subTopics": [
+                        {
+                            "name": "3.1",
+                            "week": 4,
+                            "description": "Funciones ejecutivas",
+                            "courseID": 2,
+                            "topicID": 2,
+                            "subtopicID": 0,
+                            "keyIdeaIndex": 2,
+                            "isKeyIdea": true,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "3.2",
+                            "week": -1,
+                            "description": "Desarrollo de las funciones ejecutivas",
+                            "courseID": 2,
+                            "topicID": 2,
+                            "subtopicID": 1,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "3.3",
+                            "week": -1,
+                            "description": "Bases neuropsicológicas de las funciones ejecutivas",
+                            "courseID": 2,
+                            "topicID": 2,
+                            "subtopicID": 2,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "3.4",
+                            "week": -1,
+                            "description": "Habilidades de pensamiento y tecnología",
+                            "courseID": 2,
+                            "topicID": 2,
+                            "subtopicID": 3,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        }
+                    ],
+                    "courseID": 2
+                },
+                {
+                    "topicName": "Tema 4",
+                    "subTopics": [
+                        {
+                            "name": "4.1",
+                            "week": -1,
+                            "description": "El concepto de inteligencia y las inteligencias múltiples",
+                            "courseID": 2,
+                            "topicID": 3,
+                            "subtopicID": 0,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "4.2",
+                            "week": -1,
+                            "description": "Correlato neurobiológico de la inteligencia",
+                            "courseID": 2,
+                            "topicID": 3,
+                            "subtopicID": 1,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "4.3",
+                            "week": -1,
+                            "description": "Inteligencia lingüística",
+                            "courseID": 2,
+                            "topicID": 3,
+                            "subtopicID": 2,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "4.4",
+                            "week": -1,
+                            "description": "Inteligencia lógico-matemática",
+                            "courseID": 2,
+                            "topicID": 3,
+                            "subtopicID": 3,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "4.5",
+                            "week": -1,
+                            "description": "Inteligencia visoespacial",
+                            "courseID": 2,
+                            "topicID": 3,
+                            "subtopicID": 4,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "Act1",
+                            "week": -1,
+                            "description": "Una aplicación que desarrolla al menos dos inteligencias múltiples",
+                            "courseID": 2,
+                            "topicID": 3,
+                            "subtopicID": 5,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "4.6",
+                            "week": -1,
+                            "description": "Inteligencia musical",
+                            "courseID": 2,
+                            "topicID": 3,
+                            "subtopicID": 6,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "4.7",
+                            "week": -1,
+                            "description": "Inteligencia corporal",
+                            "courseID": 2,
+                            "topicID": 3,
+                            "subtopicID": 7,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "4.8",
+                            "week": -1,
+                            "description": "Inteligencia naturalista",
+                            "courseID": 2,
+                            "topicID": 3,
+                            "subtopicID": 8,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "4.9",
+                            "week": -1,
+                            "description": "Inteligencia intrapersonal",
+                            "courseID": 2,
+                            "topicID": 3,
+                            "subtopicID": 9,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "4.10",
+                            "week": -1,
+                            "description": "Inteligencia interpersonal",
+                            "courseID": 2,
+                            "topicID": 3,
+                            "subtopicID": 10,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        }
+                    ],
+                    "courseID": 2
+                },
+                {
+                    "topicName": "Tema 5",
+                    "subTopics": [
+                        {
+                            "name": "5.1",
+                            "week": -1,
+                            "description": "La inteligencia emocional en la redes sociales",
+                            "courseID": 2,
+                            "topicID": 4,
+                            "subtopicID": 0,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "5.2",
+                            "week": -1,
+                            "description": "El efecto del entorno sobre el desarrollo cerebral",
+                            "courseID": 2,
+                            "topicID": 4,
+                            "subtopicID": 1,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "5.3",
+                            "week": -1,
+                            "description": "El cerebro y las redes sociales",
+                            "courseID": 2,
+                            "topicID": 4,
+                            "subtopicID": 2,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "5.4",
+                            "week": -1,
+                            "description": "El trabajo colaborativo con las redes sociales",
+                            "courseID": 2,
+                            "topicID": 4,
+                            "subtopicID": 3,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "5.5",
+                            "week": -1,
+                            "description": "Dejar huella. Crear marca",
+                            "courseID": 2,
+                            "topicID": 4,
+                            "subtopicID": 4,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "5.6",
+                            "week": -1,
+                            "description": "Desarrollo personal y plasticidad",
+                            "courseID": 2,
+                            "topicID": 4,
+                            "subtopicID": 5,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        }
+                    ],
+                    "courseID": 2
+                },
+                {
+                    "topicName": "Tema 6",
+                    "subTopics": [
+                        {
+                            "name": "6.1",
+                            "week": -1,
+                            "description": "El cerebro de 3 a 6 años",
+                            "courseID": 2,
+                            "topicID": 5,
+                            "subtopicID": 0,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "6.2",
+                            "week": -1,
+                            "description": "Espacios de aprendizaje",
+                            "courseID": 2,
+                            "topicID": 5,
+                            "subtopicID": 1,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "6.3",
+                            "week": -1,
+                            "description": "Programas que permiten el desarrollo de habilidades",
+                            "courseID": 2,
+                            "topicID": 5,
+                            "subtopicID": 2,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "6.4",
+                            "week": -1,
+                            "description": "Bits de inteligencia: técnica para el desarrollo de la inteligencia",
+                            "courseID": 2,
+                            "topicID": 5,
+                            "subtopicID": 3,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        }
+                    ],
+                    "courseID": 2
+                },
+                {
+                    "topicName": "Tema 7",
+                    "subTopics": [
+                        {
+                            "name": "7.1",
+                            "week": -1,
+                            "description": "Introducción",
+                            "courseID": 2,
+                            "topicID": 6,
+                            "subtopicID": 0,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "7.2",
+                            "week": -1,
+                            "description": "Atención-observación",
+                            "courseID": 2,
+                            "topicID": 6,
+                            "subtopicID": 1,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "7.3",
+                            "week": -1,
+                            "description": "Fundamentos del razonamiento",
+                            "courseID": 2,
+                            "topicID": 6,
+                            "subtopicID": 2,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "7.4",
+                            "week": -1,
+                            "description": "Orientación espaciotemporal",
+                            "courseID": 2,
+                            "topicID": 6,
+                            "subtopicID": 3,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "7.5",
+                            "week": -1,
+                            "description": "Estrategias de cálculo y problemas numericoverbales",
+                            "courseID": 2,
+                            "topicID": 6,
+                            "subtopicID": 4,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "7.6",
+                            "week": -1,
+                            "description": "Pensamiento creativo",
+                            "courseID": 2,
+                            "topicID": 6,
+                            "subtopicID": 5,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "7.7",
+                            "week": -1,
+                            "description": "Comprensión del lenguaje",
+                            "courseID": 2,
+                            "topicID": 6,
+                            "subtopicID": 6,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        }
+                    ],
+                    "courseID": 2
+                },
+                {
+                    "topicName": "Tema 8",
+                    "subTopics": [
+                        {
+                            "name": "8.1",
+                            "week": -1,
+                            "description": "La creatividad en el cerebro",
+                            "courseID": 2,
+                            "topicID": 7,
+                            "subtopicID": 0,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "8.2",
+                            "week": -1,
+                            "description": "Creatividad",
+                            "courseID": 2,
+                            "topicID": 7,
+                            "subtopicID": 1,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "8.3",
+                            "week": -1,
+                            "description": "Proceso creativo",
+                            "courseID": 2,
+                            "topicID": 7,
+                            "subtopicID": 2,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "8.4",
+                            "week": -1,
+                            "description": "Persona creativa",
+                            "courseID": 2,
+                            "topicID": 7,
+                            "subtopicID": 3,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "8.5",
+                            "week": -1,
+                            "description": "Producto creativo",
+                            "courseID": 2,
+                            "topicID": 7,
+                            "subtopicID": 4,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "8.6",
+                            "week": -1,
+                            "description": "Pensamiento crítico",
+                            "courseID": 2,
+                            "topicID": 7,
+                            "subtopicID": 5,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "8.7",
+                            "week": -1,
+                            "description": "Espíritu emprendedor",
+                            "courseID": 2,
+                            "topicID": 7,
+                            "subtopicID": 6,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "Act2",
+                            "week": -1,
+                            "description": "Creatividad en la metodología",
+                            "courseID": 2,
+                            "topicID": 7,
+                            "subtopicID": 7,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        }
+                    ],
+                    "courseID": 2
+                },
+                {
+                    "topicName": "Tema 9",
+                    "subTopics": [
+                        {
+                            "name": "9.1",
+                            "week": -1,
+                            "description": "Introducción",
+                            "courseID": 2,
+                            "topicID": 8,
+                            "subtopicID": 0,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "9.2",
+                            "week": -1,
+                            "description": "Desarrollo de la atención",
+                            "courseID": 2,
+                            "topicID": 8,
+                            "subtopicID": 1,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "9.3",
+                            "week": -1,
+                            "description": "Programas para trabajar sentido espacial",
+                            "courseID": 2,
+                            "topicID": 8,
+                            "subtopicID": 2,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "Act2",
+                            "week": -1,
+                            "description": "Un recurso digital para cada necesidad",
+                            "courseID": 2,
+                            "topicID": 8,
+                            "subtopicID": 3,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "9.4",
+                            "week": -1,
+                            "description": "Programas para alumnos con dislexia",
+                            "courseID": 2,
+                            "topicID": 8,
+                            "subtopicID": 4,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "9.5",
+                            "week": -1,
+                            "description": "Programas para alumnos con discalculia",
+                            "courseID": 2,
+                            "topicID": 8,
+                            "subtopicID": 5,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "9.6",
+                            "week": -1,
+                            "description": "Programas para alumnos con dificultades de aprendizaje",
+                            "courseID": 2,
+                            "topicID": 8,
+                            "subtopicID": 6,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        }
+                    ],
+                    "courseID": 2
+                },
+                {
+                    "topicName": "Tema 10",
+                    "subTopics": [
+                        {
+                            "name": "10.1",
+                            "week": -1,
+                            "description": "¿Qué es la inteligencia artificial?",
+                            "courseID": 2,
+                            "topicID": 9,
+                            "subtopicID": 0,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "10.2",
+                            "week": -1,
+                            "description": "Pensamiento computacional",
+                            "courseID": 2,
+                            "topicID": 9,
+                            "subtopicID": 1,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        },
+                        {
+                            "name": "10.3",
+                            "week": -1,
+                            "description": "Visión espacial",
+                            "courseID": 2,
+                            "topicID": 9,
+                            "subtopicID": 2,
+                            "keyIdeaIndex": -1,
+                            "isKeyIdea": false,
+                            "studyStrategy": 0,
+                            "stimatedTime": 0,
+                            "satisfaction": -1
+                        }
+                    ],
+                    "courseID": 2
+                }
+            ],
+            "courseID": 2
+        }
+    ]
+}

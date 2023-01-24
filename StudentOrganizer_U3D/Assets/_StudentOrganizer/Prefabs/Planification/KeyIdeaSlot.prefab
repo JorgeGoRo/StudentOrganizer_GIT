@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 6797974999360858150}
   - component: {fileID: 8688339196315745893}
   - component: {fileID: 4044867403333184643}
-  - component: {fileID: 8595388316093554104}
+  - component: {fileID: 1647591273946943494}
   m_Layer: 5
-  m_Name: SubtopicSlot
+  m_Name: KeyIdeaSlot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &8595388316093554104
+--- !u!114 &1647591273946943494
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -86,6 +86,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1412413617641547944}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c82de965e450ec47ab2d0c7a872664a, type: 3}
+  m_Script: {fileID: 11500000, guid: d7d2a0a93a1ab4e4b868fafb02ac177b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dropCheckCondition: 1

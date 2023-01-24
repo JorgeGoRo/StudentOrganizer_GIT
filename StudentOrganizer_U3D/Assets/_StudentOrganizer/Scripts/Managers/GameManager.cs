@@ -5,13 +5,21 @@ using UnityEngine;
 public class GameManager : MonoBehaviour {
     private List<BaseManager> _managers;
     private Dictionary<Type, BaseManager>_managersDictionary;
+
+    //Singleton
+    private static GameManager _instance;
+    [HideInInspector] public static GameManager Instance { get { return _instance; } }
+  
     private void Awake() {
+        if (_instance != null && _instance != this) { Destroy(this.gameObject); } else { _instance = this; }
+        DontDestroyOnLoad(gameObject);
         GetManagers();
     }
 
     private void Start() {
-        GetManager<CourseReader>().GenerateCourses();
-        GetManager<CourseSelector>().FillContent();
+        GetManager<CourseReader>().ReadCourses(() => {
+            GetManager<CourseSelector>().CreateContent();
+        });
     }
 
     public void GetManagers() {

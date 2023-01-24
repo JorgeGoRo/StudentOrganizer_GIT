@@ -21,7 +21,7 @@ public class DraggableComponent : MonoBehaviour, IInitializePotentialDragHandler
 
     protected virtual void Awake() {
         rectTransform = GetComponent<RectTransform>();
-        canvas = GetComponentInParent<Canvas>();
+        canvas = transform.root.GetComponent<Canvas>();
     }
 
     public void OnBeginDrag(PointerEventData eventData) {

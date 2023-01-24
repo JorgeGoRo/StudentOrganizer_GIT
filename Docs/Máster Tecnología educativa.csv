@@ -1,0 +1,128 @@
+Asignatura;ID objetivo;Semana;Descripción objetivo (aparece en la pantalla 2 supervisión)
+
+Programación y robótica para docentes;1.1;1;Por qué introducir la programación en el aula
+Programación y robótica para docentes;1.2;1;Por qué trabajar con robótica educativa
+Programación y robótica para docentes;1.3;1;El pensamiento computacional
+Programación y robótica para docentes;2.1;2;Algoritmos y diagramas de flujo
+Programación y robótica para docentes;2.2;3;Estructuración y organización de algoritmos
+Programación y robótica para docentes;2.3;4;Instrucciones de control
+Programación y robótica para docentes;3.1;5;Introducción a la programa por bloques
+Programación y robótica para docentes;3.2;5;ScratchJR
+Programación y robótica para docentes;3.3;5;Primeros pasos con Scratch
+Programación y robótica para docentes;3.4;6;Programación con Scratch
+Programación y robótica para docentes;3.5;6;Scratch en educación
+Programación y robótica para docentes;3.6;6;Control de un robot con Scratch
+Programación y robótica para docentes;Act1;6;Scratch: Crear una animación educativa
+Programación y robótica para docentes;4.1;7;Las aplicaciones como herramientas de aprendizaje
+Programación y robótica para docentes;4.2;7;Introducción a App Inventor
+Programación y robótica para docentes;5.1;8;Sistema de control
+Programación y robótica para docentes;5.2;8;Actuadores
+Programación y robótica para docentes;5.3;9;Sensores
+Programación y robótica para docentes;6.1;10;Robots básicos para crear secuencias
+Programación y robótica para docentes;6.2;10;Robots cerrados para programar
+Programación y robótica para docentes;6.3;11;Kits de robótica y robots abiertos
+Programación y robótica para docentes;6.4;11;Simuladores
+Programación y robótica para docentes;Act2;11;Labsland: creación de un robot siguelíneas
+Programación y robótica para docentes;7.1;12;STEAM como modelo de aprendizaje
+Programación y robótica para docentes;7.2;12;STEAM como herramienta para resolución de problemas
+Programación y robótica para docentes;7.3;13;Creación de propuestas didácticas que integran STEAM
+Programación y robótica para docentes;Act3;13;Foro Creación de propuesta STEAM
+Programación y robótica para docentes;8.1;14;Introducción al IoT
+Programación y robótica para docentes;8.2;14;Aplicaciones del IoT
+Programación y robótica para docentes;8.3;14;Arduino y el IoT
+
+Emprendimiento;1.1;1;El emprendimiento en el siglo XXI
+Emprendimiento;1.2;2;Educar para emprender
+Emprendimiento;1.3;2;La competencia emprendedora
+Emprendimiento;2.1;3;Competencias del área <Ideas y oportunidades>
+Emprendimiento;2.2;4;Competencias del área <Recursos>
+Emprendimiento;2.3;4;Competencias del área <En acción>
+Emprendimiento;3.1;5;Estrategias cognitivas
+Emprendimiento;3.2;6;Estrategias metacognitivas
+Emprendimiento;3.3;6;Estrategias para la gestión emocional
+Emprendimiento;4.1;7;El emprendimiento a través de la creación de un proyecto
+Emprendimiento;4.2;7;Fases de un proyecto
+Emprendimiento;4.3;8;Proyectos emprendedores en educación
+Emprendimiento;Act1;8;Web para guiar la elaboración de un proyecto emprendedor
+Emprendimiento;5.1;9;Beneficios del uso de métodos ágiles en educación
+Emprendimiento;5.2;9;Método Lean
+Emprendimiento;5.3;9;Scrum
+Emprendimiento;5.4;9;Kanban
+Emprendimiento;6.1;10;Beneficios de implantar un ecosistema emprendedor
+Emprendimiento;6.2;10;Pautas para crear un ecosistema emprendedor en la escuela
+Emprendimiento;6.3;10;Ejemplos de ecosistemas emprendedores
+Emprendimiento;Act2;10;Diseño de un espacio para el emprendimiento
+Emprendimiento;7.1;11;El emprendimiento social
+Emprendimiento;7.2;11;La técnica de Aprendizaje-Servicio
+Emprendimiento;7.3;12;Aprendizaje-Servicio en el aula
+Emprendimiento;7.4;12;Iniciativas exitosas con ApS
+Emprendimiento;Act3;12;Caso grupal: Proyecto de ApS para mejorar nuestros centros educativos
+Emprendimiento;8.1;13;Innovación, emprendimiento y creatividad
+Emprendimiento;8.2;13;Características y tipo de innovación
+Emprendimiento;8.3;13;Innovación educativa con tecnología
+Emprendimiento;9.1;14;Creatividad y resolución de problemas
+Emprendimiento;9.2;14;Creatividad y diseño de un producto
+Emprendimiento;9.3;14;Creatividad digital
+Neurociencia;1.1;1;Neurociencia educativa
+Neurociencia;1.2;1;Bases neuropsicológicas
+Neurociencia;1.3;1;La entrada de la información en el cerebro
+Neurociencia;1.4;2;La funcionalidad visual
+Neurociencia;1.5;2;La funcionalidad auditiva
+Neurociencia;1.6;2;Desarrollo táctil
+Neurociencia;1.7;2;El procesamiento de la información en el cerebro
+Neurociencia;1.8;2;La integración sensorial y el aprendizaje
+Neurociencia;2.1;3;El porqué de un cambio metodológico
+Neurociencia;2.2;3;Elementos claves para el cambio metodológico
+Neurociencia;2.3;3;El modelo CAIT
+Neurociencia;2.4;4;El modelo TPACK
+Neurociencia;2.5;4;Propuestas para el cambio
+Neurociencia;3.1;5;Funciones ejecutivas
+Neurociencia;3.2;5;Desarrollo de las funciones ejecutivas
+Neurociencia;3.3;5;Bases neuropsicológicas de las funciones ejecutivas
+Neurociencia;3.4;5;Habilidades de pensamiento y tecnología
+Neurociencia;4.1;6;El concepto de inteligencia y las inteligencias múltiples
+Neurociencia;4.2;6;Correlato neurobiológico de la inteligencia
+Neurociencia;4.3;6;Inteligencia lingüística
+Neurociencia;4.4;6;Inteligencia lógico-matemática
+Neurociencia;4.5;6;Inteligencia visoespacial
+Neurociencia;Act1;6;Una aplicación que desarrolla al menos dos inteligencias múltiples
+Neurociencia;4.6;7;Inteligencia musical
+Neurociencia;4.7;7;Inteligencia corporal
+Neurociencia;4.8;7;Inteligencia naturalista
+Neurociencia;4.9;7;Inteligencia intrapersonal
+Neurociencia;4.10;7;Inteligencia interpersonal
+Neurociencia;5.1;8;La inteligencia emocional en la redes sociales
+Neurociencia;5.2;8;El efecto del entorno sobre el desarrollo cerebral
+Neurociencia;5.3;8;El cerebro y las redes sociales
+Neurociencia;5.4;8;El trabajo colaborativo con las redes sociales
+Neurociencia;5.5;8;Dejar huella. Crear marca
+Neurociencia;5.6;8;Desarrollo personal y plasticidad
+Neurociencia;6.1;9;El cerebro de 3 a 6 años
+Neurociencia;6.2;9;Espacios de aprendizaje
+Neurociencia;6.3;9;Programas que permiten el desarrollo de habilidades
+Neurociencia;6.4;9;Bits de inteligencia: técnica para el desarrollo de la inteligencia
+Neurociencia;7.1;10;Introducción
+Neurociencia;7.2;10;Atención-observación
+Neurociencia;7.3;10;Fundamentos del razonamiento
+Neurociencia;7.4;10;Orientación espaciotemporal
+Neurociencia;7.5;10;Estrategias de cálculo y problemas numericoverbales
+Neurociencia;7.6;10;Pensamiento creativo
+Neurociencia;7.7;10;Comprensión del lenguaje
+Neurociencia;8.1;11;La creatividad en el cerebro
+Neurociencia;8.2;11;Creatividad
+Neurociencia;8.3;11;Proceso creativo
+Neurociencia;8.4;11;Persona creativa
+Neurociencia;8.5;11;Producto creativo
+Neurociencia;8.6;11;Pensamiento crítico
+Neurociencia;8.7;11;Espíritu emprendedor
+Neurociencia;Act2;11;Creatividad en la metodología
+Neurociencia;9.1;12;Introducción
+Neurociencia;9.2;12;Desarrollo de la atención
+Neurociencia;9.3;12;Programas para trabajar sentido espacial
+Neurociencia;Act3;12;Un recurso digital para cada necesidad
+Neurociencia;9.4;13;Programas para alumnos con dislexia
+Neurociencia;9.5;13;Programas para alumnos con discalculia
+Neurociencia;9.6;13;Programas para alumnos con dificultades de aprendizaje
+Neurociencia;10.1;14;¿Qué es la inteligencia artificial?
+Neurociencia;10.2;14;Pensamiento computacional
+Neurociencia;10.3;14;Visión espacial

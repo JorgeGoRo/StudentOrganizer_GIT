@@ -3,5 +3,6 @@ public class SubtopicSlot : Slot {
         base.Awake();
         DropArea.DropConditions.Add(new IsSubtopicCondition());
         DropArea.DropConditions.Add(new IsNotKeyIdeaCondition());
+        DropArea.OnDropHandler += OnItemDropped;
     }
 }

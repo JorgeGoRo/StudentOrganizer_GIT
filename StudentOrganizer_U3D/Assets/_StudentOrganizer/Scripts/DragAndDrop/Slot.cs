@@ -6,10 +6,10 @@ using UnityEngine;
 public class Slot : MonoBehaviour {
     
     protected DropArea DropArea;
-
+    public DropCheckCondition dropCheckCondition = DropCheckCondition.TRUE_FOR_ALL;
     protected virtual void Awake() {
         DropArea = GetComponent<DropArea>() ?? gameObject.AddComponent<DropArea>();
-        DropArea.OnDropHandler += OnItemDropped;
+        DropArea.dropCheckCondition = dropCheckCondition;
     }
 
     protected virtual void OnItemDropped(DraggableComponent draggable) {

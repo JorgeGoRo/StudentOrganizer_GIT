@@ -1,0 +1,780 @@
+{
+    "isNewFile": true,
+    "courses": [
+        {
+            "name": "Programación y robótica para docentes",
+            "topics": [
+                {
+                    "topicName": "Tema 1",
+                    "subTopics": [
+                        {
+                            "name": "1.1",
+                            "week": 1,
+                            "description": "Por qué introducir la programación en el aula"
+                        },
+                        {
+                            "name": "1.2",
+                            "week": 1,
+                            "description": "Por qué trabajar con robótica educativa"
+                        },
+                        {
+                            "name": "1.3",
+                            "week": 1,
+                            "description": "El pensamiento computacional"
+                        }
+                    ]
+                },
+                {
+                    "topicName": "Tema 2",
+                    "subTopics": [
+                        {
+                            "name": "2.1",
+                            "week": 2,
+                            "description": "Algoritmos y diagramas de flujo"
+                        },
+                        {
+                            "name": "2.2",
+                            "week": 3,
+                            "description": "Estructuración y organización de algoritmos"
+                        },
+                        {
+                            "name": "2.3",
+                            "week": 4,
+                            "description": "Instrucciones de control"
+                        }
+                    ]
+                },
+                {
+                    "topicName": "Tema 3",
+                    "subTopics": [
+                        {
+                            "name": "3.1",
+                            "week": 5,
+                            "description": "Introducción a la programa por bloques"
+                        },
+                        {
+                            "name": "3.2",
+                            "week": 5,
+                            "description": "ScratchJR"
+                        },
+                        {
+                            "name": "3.3",
+                            "week": 5,
+                            "description": "Primeros pasos con Scratch"
+                        },
+                        {
+                            "name": "3.4",
+                            "week": 6,
+                            "description": "Programación con Scratch"
+                        },
+                        {
+                            "name": "3.5",
+                            "week": 6,
+                            "description": "Scratch en educación"
+                        },
+                        {
+                            "name": "3.6",
+                            "week": 6,
+                            "description": "Control de un robot con Scratch"
+                        },
+                        {
+                            "name": "Act1",
+                            "week": 6,
+                            "description": "Scratch: Crear una animación educativa"
+                        }
+                    ]
+                },
+                {
+                    "topicName": "Tema 4",
+                    "subTopics": [
+                        {
+                            "name": "4.1",
+                            "week": 7,
+                            "description": "Las aplicaciones como herramientas de aprendizaje"
+                        },
+                        {
+                            "name": "4.2",
+                            "week": 7,
+                            "description": "Introducción a App Inventor"
+                        }
+                    ]
+                },
+                {
+                    "topicName": "Tema 5",
+                    "subTopics": [
+                        {
+                            "name": "5.1",
+                            "week": 8,
+                            "description": "Sistema de control"
+                        },
+                        {
+                            "name": "5.2",
+                            "week": 8,
+                            "description": "Actuadores"
+                        },
+                        {
+                            "name": "5.3",
+                            "week": 9,
+                            "description": "Sensores"
+                        }
+                    ]
+                },
+                {
+                    "topicName": "Tema 6",
+                    "subTopics": [
+                        {
+                            "name": "6.1",
+                            "week": 10,
+                            "description": "Robots básicos para crear secuencias"
+                        },
+                        {
+                            "name": "6.2",
+                            "week": 10,
+                            "description": "Robots cerrados para programar"
+                        },
+                        {
+                            "name": "6.3",
+                            "week": 11,
+                            "description": "Kits de robótica y robots abiertos"
+                        },
+                        {
+                            "name": "6.4",
+                            "week": 11,
+                            "description": "Simuladores"
+                        },
+                        {
+                            "name": "Act2",
+                            "week": 11,
+                            "description": "Labsland: creación de un robot siguelíneas"
+                        }
+                    ]
+                },
+                {
+                    "topicName": "Tema 7",
+                    "subTopics": [
+                        {
+                            "name": "7.1",
+                            "week": 12,
+                            "description": "STEAM como modelo de aprendizaje"
+                        },
+                        {
+                            "name": "7.2",
+                            "week": 12,
+                            "description": "STEAM como herramienta para resolución de problemas"
+                        },
+                        {
+                            "name": "7.3",
+                            "week": 13,
+                            "description": "Creación de propuestas didácticas que integran STEAM"
+                        },
+                        {
+                            "name": "Act3",
+                            "week": 13,
+                            "description": "Foro Creación de propuesta STEAM"
+                        }
+                    ]
+                },
+                {
+                    "topicName": "Tema 8",
+                    "subTopics": [
+                        {
+                            "name": "8.1",
+                            "week": 14,
+                            "description": "Introducción al IoT"
+                        },
+                        {
+                            "name": "8.2",
+                            "week": 14,
+                            "description": "Aplicaciones del IoT"
+                        },
+                        {
+                            "name": "8.3",
+                            "week": 14,
+                            "description": "Arduino y el IoT"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Emprendimiento",
+            "topics": [
+                {
+                    "topicName": "Tema 1",
+                    "subTopics": [
+                        {
+                            "name": "1.1",
+                            "week": 1,
+                            "description": "El emprendimiento en el siglo XXI"
+                        },
+                        {
+                            "name": "1.2",
+                            "week": 2,
+                            "description": "Educar para emprender"
+                        },
+                        {
+                            "name": "1.3",
+                            "week": 2,
+                            "description": "La competencia emprendedora"
+                        }
+                    ]
+                },
+                {
+                    "topicName": "Tema 2",
+                    "subTopics": [
+                        {
+                            "name": "2.1",
+                            "week": 3,
+                            "description": "Competencias del área <Ideas y oportunidades>"
+                        },
+                        {
+                            "name": "2.2",
+                            "week": 4,
+                            "description": "Competencias del área <Recursos>"
+                        },
+                        {
+                            "name": "2.3",
+                            "week": 4,
+                            "description": "Competencias del área <En acción>"
+                        }
+                    ]
+                },
+                {
+                    "topicName": "Tema 3",
+                    "subTopics": [
+                        {
+                            "name": "3.1",
+                            "week": 5,
+                            "description": "Estrategias cognitivas"
+                        },
+                        {
+                            "name": "3.2",
+                            "week": 6,
+                            "description": "Estrategias metacognitivas"
+                        },
+                        {
+                            "name": "3.3",
+                            "week": 6,
+                            "description": "Estrategias para la gestión emocional"
+                        }
+                    ]
+                },
+                {
+                    "topicName": "Tema 4",
+                    "subTopics": [
+                        {
+                            "name": "4.1",
+                            "week": 7,
+                            "description": "El emprendimiento a través de la creación de un proyecto"
+                        },
+                        {
+                            "name": "4.2",
+                            "week": 7,
+                            "description": "Fases de un proyecto"
+                        },
+                        {
+                            "name": "4.3",
+                            "week": 8,
+                            "description": "Proyectos emprendedores en educación"
+                        },
+                        {
+                            "name": "Act1",
+                            "week": 8,
+                            "description": "Web para guiar la elaboración de un proyecto emprendedor"
+                        }
+                    ]
+                },
+                {
+                    "topicName": "Tema 5",
+                    "subTopics": [
+                        {
+                            "name": "5.1",
+                            "week": 9,
+                            "description": "Beneficios del uso de métodos ágiles en educación"
+                        },
+                        {
+                            "name": "5.2",
+                            "week": 9,
+                            "description": "Método Lean"
+                        },
+                        {
+                            "name": "5.3",
+                            "week": 9,
+                            "description": "Scrum"
+                        },
+                        {
+                            "name": "5.4",
+                            "week": 9,
+                            "description": "Kanban"
+                        }
+                    ]
+                },
+                {
+                    "topicName": "Tema 6",
+                    "subTopics": [
+                        {
+                            "name": "6.1",
+                            "week": 10,
+                            "description": "Beneficios de implantar un ecosistema emprendedor"
+                        },
+                        {
+                            "name": "6.2",
+                            "week": 10,
+                            "description": "Pautas para crear un ecosistema emprendedor en la escuela"
+                        },
+                        {
+                            "name": "6.3",
+                            "week": 10,
+                            "description": "Ejemplos de ecosistemas emprendedores"
+                        },
+                        {
+                            "name": "Act2",
+                            "week": 10,
+                            "description": "Diseño de un espacio para el emprendimiento"
+                        }
+                    ]
+                },
+                {
+                    "topicName": "Tema 7",
+                    "subTopics": [
+                        {
+                            "name": "7.1",
+                            "week": 11,
+                            "description": "El emprendimiento social"
+                        },
+                        {
+                            "name": "7.2",
+                            "week": 11,
+                            "description": "La técnica de Aprendizaje-Servicio"
+                        },
+                        {
+                            "name": "7.3",
+                            "week": 12,
+                            "description": "Aprendizaje-Servicio en el aula"
+                        },
+                        {
+                            "name": "7.4",
+                            "week": 12,
+                            "description": "Iniciativas exitosas con ApS"
+                        },
+                        {
+                            "name": "Act3",
+                            "week": 12,
+                            "description": "Caso grupal: Proyecto de ApS para mejorar nuestros centros educativos"
+                        }
+                    ]
+                },
+                {
+                    "topicName": "Tema 8",
+                    "subTopics": [
+                        {
+                            "name": "8.1",
+                            "week": 13,
+                            "description": "Innovación, emprendimiento y creatividad"
+                        },
+                        {
+                            "name": "8.2",
+                            "week": 13,
+                            "description": "Características y tipo de innovación"
+                        },
+                        {
+                            "name": "8.3",
+                            "week": 13,
+                            "description": "Innovación educativa con tecnología"
+                        }
+                    ]
+                },
+                {
+                    "topicName": "Tema 9",
+                    "subTopics": [
+                        {
+                            "name": "9.1",
+                            "week": 14,
+                            "description": "Creatividad y resolución de problemas"
+                        },
+                        {
+                            "name": "9.2",
+                            "week": 14,
+                            "description": "Creatividad y diseño de un producto"
+                        },
+                        {
+                            "name": "9.3",
+                            "week": 14,
+                            "description": "Creatividad digital"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Neurociencia",
+            "topics": [
+                {
+                    "topicName": "Tema 1",
+                    "subTopics": [
+                        {
+                            "name": "1.1",
+                            "week": 1,
+                            "description": "Neurociencia educativa"
+                        },
+                        {
+                            "name": "1.2",
+                            "week": 1,
+                            "description": "Bases neuropsicológicas"
+                        },
+                        {
+                            "name": "1.3",
+                            "week": 1,
+                            "description": "La entrada de la información en el cerebro"
+                        },
+                        {
+                            "name": "1.4",
+                            "week": 2,
+                            "description": "La funcionalidad visual"
+                        },
+                        {
+                            "name": "1.5",
+                            "week": 2,
+                            "description": "La funcionalidad auditiva"
+                        },
+                        {
+                            "name": "1.6",
+                            "week": 2,
+                            "description": "Desarrollo táctil"
+                        },
+                        {
+                            "name": "1.7",
+                            "week": 2,
+                            "description": "El procesamiento de la información en el cerebro"
+                        },
+                        {
+                            "name": "1.8",
+                            "week": 2,
+                            "description": "La integración sensorial y el aprendizaje"
+                        }
+                    ]
+                },
+                {
+                    "topicName": "Tema 2",
+                    "subTopics": [
+                        {
+                            "name": "2.1",
+                            "week": 3,
+                            "description": "El porqué de un cambio metodológico"
+                        },
+                        {
+                            "name": "2.2",
+                            "week": 3,
+                            "description": "Elementos claves para el cambio metodológico"
+                        },
+                        {
+                            "name": "2.3",
+                            "week": 3,
+                            "description": "El modelo CAIT"
+                        },
+                        {
+                            "name": "2.4",
+                            "week": 4,
+                            "description": "El modelo TPACK"
+                        },
+                        {
+                            "name": "2.5",
+                            "week": 4,
+                            "description": "Propuestas para el cambio"
+                        }
+                    ]
+                },
+                {
+                    "topicName": "Tema 3",
+                    "subTopics": [
+                        {
+                            "name": "3.1",
+                            "week": 5,
+                            "description": "Funciones ejecutivas"
+                        },
+                        {
+                            "name": "3.2",
+                            "week": 5,
+                            "description": "Desarrollo de las funciones ejecutivas"
+                        },
+                        {
+                            "name": "3.3",
+                            "week": 5,
+                            "description": "Bases neuropsicológicas de las funciones ejecutivas"
+                        },
+                        {
+                            "name": "3.4",
+                            "week": 5,
+                            "description": "Habilidades de pensamiento y tecnología"
+                        }
+                    ]
+                },
+                {
+                    "topicName": "Tema 4",
+                    "subTopics": [
+                        {
+                            "name": "4.1",
+                            "week": 6,
+                            "description": "El concepto de inteligencia y las inteligencias múltiples"
+                        },
+                        {
+                            "name": "4.2",
+                            "week": 6,
+                            "description": "Correlato neurobiológico de la inteligencia"
+                        },
+                        {
+                            "name": "4.3",
+                            "week": 6,
+                            "description": "Inteligencia lingüística"
+                        },
+                        {
+                            "name": "4.4",
+                            "week": 6,
+                            "description": "Inteligencia lógico-matemática"
+                        },
+                        {
+                            "name": "4.5",
+                            "week": 6,
+                            "description": "Inteligencia visoespacial"
+                        },
+                        {
+                            "name": "Act1",
+                            "week": 6,
+                            "description": "Una aplicación que desarrolla al menos dos inteligencias múltiples"
+                        },
+                        {
+                            "name": "4.6",
+                            "week": 7,
+                            "description": "Inteligencia musical"
+                        },
+                        {
+                            "name": "4.7",
+                            "week": 7,
+                            "description": "Inteligencia corporal"
+                        },
+                        {
+                            "name": "4.8",
+                            "week": 7,
+                            "description": "Inteligencia naturalista"
+                        },
+                        {
+                            "name": "4.9",
+                            "week": 7,
+                            "description": "Inteligencia intrapersonal"
+                        },
+                        {
+                            "name": "4.10",
+                            "week": 7,
+                            "description": "Inteligencia interpersonal"
+                        }
+                    ]
+                },
+                {
+                    "topicName": "Tema 5",
+                    "subTopics": [
+                        {
+                            "name": "5.1",
+                            "week": 8,
+                            "description": "La inteligencia emocional en la redes sociales"
+                        },
+                        {
+                            "name": "5.2",
+                            "week": 8,
+                            "description": "El efecto del entorno sobre el desarrollo cerebral"
+                        },
+                        {
+                            "name": "5.3",
+                            "week": 8,
+                            "description": "El cerebro y las redes sociales"
+                        },
+                        {
+                            "name": "5.4",
+                            "week": 8,
+                            "description": "El trabajo colaborativo con las redes sociales"
+                        },
+                        {
+                            "name": "5.5",
+                            "week": 8,
+                            "description": "Dejar huella. Crear marca"
+                        },
+                        {
+                            "name": "5.6",
+                            "week": 8,
+                            "description": "Desarrollo personal y plasticidad"
+                        }
+                    ]
+                },
+                {
+                    "topicName": "Tema 6",
+                    "subTopics": [
+                        {
+                            "name": "6.1",
+                            "week": 9,
+                            "description": "El cerebro de 3 a 6 años"
+                        },
+                        {
+                            "name": "6.2",
+                            "week": 9,
+                            "description": "Espacios de aprendizaje"
+                        },
+                        {
+                            "name": "6.3",
+                            "week": 9,
+                            "description": "Programas que permiten el desarrollo de habilidades"
+                        },
+                        {
+                            "name": "6.4",
+                            "week": 9,
+                            "description": "Bits de inteligencia: técnica para el desarrollo de la inteligencia"
+                        }
+                    ]
+                },
+                {
+                    "topicName": "Tema 7",
+                    "subTopics": [
+                        {
+                            "name": "7.1",
+                            "week": 10,
+                            "description": "Introducción"
+                        },
+                        {
+                            "name": "7.2",
+                            "week": 10,
+                            "description": "Atención-observación"
+                        },
+                        {
+                            "name": "7.3",
+                            "week": 10,
+                            "description": "Fundamentos del razonamiento"
+                        },
+                        {
+                            "name": "7.4",
+                            "week": 10,
+                            "description": "Orientación espaciotemporal"
+                        },
+                        {
+                            "name": "7.5",
+                            "week": 10,
+                            "description": "Estrategias de cálculo y problemas numericoverbales"
+                        },
+                        {
+                            "name": "7.6",
+                            "week": 10,
+                            "description": "Pensamiento creativo"
+                        },
+                        {
+                            "name": "7.7",
+                            "week": 10,
+                            "description": "Comprensión del lenguaje"
+                        }
+                    ]
+                },
+                {
+                    "topicName": "Tema 8",
+                    "subTopics": [
+                        {
+                            "name": "8.1",
+                            "week": 11,
+                            "description": "La creatividad en el cerebro"
+                        },
+                        {
+                            "name": "8.2",
+                            "week": 11,
+                            "description": "Creatividad"
+                        },
+                        {
+                            "name": "8.3",
+                            "week": 11,
+                            "description": "Proceso creativo"
+                        },
+                        {
+                            "name": "8.4",
+                            "week": 11,
+                            "description": "Persona creativa"
+                        },
+                        {
+                            "name": "8.5",
+                            "week": 11,
+                            "description": "Producto creativo"
+                        },
+                        {
+                            "name": "8.6",
+                            "week": 11,
+                            "description": "Pensamiento crítico"
+                        },
+                        {
+                            "name": "8.7",
+                            "week": 11,
+                            "description": "Espíritu emprendedor"
+                        },
+                        {
+                            "name": "Act2",
+                            "week": 11,
+                            "description": "Creatividad en la metodología"
+                        }
+                    ]
+                },
+                {
+                    "topicName": "Tema 9",
+                    "subTopics": [
+                        {
+                            "name": "9.1",
+                            "week": 12,
+                            "description": "Introducción"
+                        },
+                        {
+                            "name": "9.2",
+                            "week": 12,
+                            "description": "Desarrollo de la atención"
+                        },
+                        {
+                            "name": "9.3",
+                            "week": 12,
+                            "description": "Programas para trabajar sentido espacial"
+                        },
+                        {
+                            "name": "Act2",
+                            "week": 12,
+                            "description": "Un recurso digital para cada necesidad"
+                        },
+                        {
+                            "name": "9.4",
+                            "week": 13,
+                            "description": "Programas para alumnos con dislexia"
+                        },
+                        {
+                            "name": "9.5",
+                            "week": 13,
+                            "description": "Programas para alumnos con discalculia"
+                        },
+                        {
+                            "name": "9.6",
+                            "week": 13,
+                            "description": "Programas para alumnos con dificultades de aprendizaje"
+                        }
+                    ]
+                },
+                {
+                    "topicName": "Tema 10",
+                    "subTopics": [
+                        {
+                            "name": "10.1",
+                            "week": 14,
+                            "description": "¿Qué es la inteligencia artificial?"
+                        },
+                        {
+                            "name": "10.2",
+                            "week": 14,
+                            "description": "Pensamiento computacional"
+                        },
+                        {
+                            "name": "10.3",
+                            "week": 14,
+                            "description": "Visión espacial"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
