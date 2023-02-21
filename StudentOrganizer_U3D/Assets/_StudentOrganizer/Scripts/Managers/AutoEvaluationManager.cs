@@ -30,6 +30,9 @@ public class AutoEvaluationManager : BaseManager {
     [FoldoutGroup("UI/Prefabs")] [SerializeField]
     private GameObject autoEvTopicPrefab;
 
+    [FoldoutGroup("UI/Colors")] [SerializeField]
+    private Color selectedColor = Color.red;
+
 
     private void Start() {
         SetUIFunctionality();
@@ -56,7 +59,7 @@ public class AutoEvaluationManager : BaseManager {
                     courseButtons[j].GetComponentInChildren<Image>().color = Color.white;
                 }
 
-                courseButton.GetComponentInChildren<Image>().color = Color.red;
+                courseButton.GetComponentInChildren<Image>().color = GameManager.CourseColors[courseIndex];
                 CreateContent(courseIndex);
             });
         }
@@ -64,7 +67,8 @@ public class AutoEvaluationManager : BaseManager {
 
     public void OpenView() {
         SetCoursesTime();
-        CreateContent();
+        courseButtons[0].onClickEvent?.Invoke();
+        // CreateContent();
     }
 
     private void SetCoursesTime() {

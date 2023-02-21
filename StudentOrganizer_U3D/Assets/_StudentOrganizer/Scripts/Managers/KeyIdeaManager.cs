@@ -4,9 +4,10 @@ using System.Collections.Generic;
 using Doozy.Runtime.UIManager.Components;
 using Sirenix.OdinInspector;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class KeyIdeaSelector : BaseManager {
+public class KeyIdeaManager : BaseManager {
     [FoldoutGroup("UI")] [FoldoutGroup("UI/Holders")] [SerializeField]
     private Transform keyIdeasHolder;
 
@@ -18,6 +19,9 @@ public class KeyIdeaSelector : BaseManager {
 
     [FoldoutGroup("UI/Buttons")] [SerializeField]
     private UIButton nextButton;
+
+    [FoldoutGroup("UI/Prefabs")] [SerializeField]
+    private GameObject keyIdeaHolderPrefab;
 
     [FoldoutGroup("UI/Labels")] [SerializeField]
     private TextMeshProUGUI currentWeekText;
@@ -31,7 +35,20 @@ public class KeyIdeaSelector : BaseManager {
     public int CurrentWeek => currentWeek;
 
     private void Start() {
+        CleanUI();
         SetUIFunctionality();
+    }
+
+    public void CleanUI() {
+        for (int i = 0; i < hiddenKeyIdeasHolder.childCount; i++) {
+            Destroy(hiddenKeyIdeasHolder.GetChild(i).gameObject);
+        }
+
+        for (int i = 0; i < keyIdeasHolder.childCount; i++) {
+            for (int j = 0; j < keyIdeasHolder.GetChild(i).childCount; j++) {
+                Destroy(keyIdeasHolder.GetChild(i).GetChild(j).gameObject);
+            }
+        }
     }
 
     private void SetUIFunctionality() {
@@ -65,7 +82,7 @@ public class KeyIdeaSelector : BaseManager {
         List<Transform> keyIdeasToShow = new List<Transform>();
         for (int i = 0; i < hiddenKeyIdeasHolder.childCount; i++) {
             KeyIdeaHolder keyIdeaHolder = hiddenKeyIdeasHolder.GetChild(i).GetComponent<KeyIdeaHolder>();
-            if (keyIdeaHolder.CurrentSubTopic.week == currentWeek) {
+            if ((keyIdeaHolder.CurrentSubTopic.week - 1) == currentWeek) {
                 keyIdeasToShow.Add(keyIdeaHolder.transform);
             }
         }
@@ -92,7 +109,8 @@ public class KeyIdeaSelector : BaseManager {
     }
 
     public void HideKeyIdeaIfNeeded(KeyIdeaHolder keyIdeaToHide) {
-        if (keyIdeaToHide.CurrentSubTopic.week != currentWeek) {
+        int actualWeek = currentWeek + 1;
+        if (keyIdeaToHide.CurrentSubTopic.week != actualWeek) {
             keyIdeaToHide.transform.parent = hiddenKeyIdeasHolder;
             keyIdeaToHide.GetComponent<RectTransform>().anchoredPosition = Vector3.zero;
         }
@@ -100,5 +118,15 @@ public class KeyIdeaSelector : BaseManager {
 
     public Transform GetKeyIdeaHolderByIndex(int keyIdeaIndex) {
         return keyIdeasHolder.GetChild(keyIdeaIndex);
+    }
+
+    public void CreateKeyIdea(SubTopic subtopic) {
+        KeyIdeaHolder keyIdeaHolder = Instantiate(keyIdeaHolderPrefab, keyIdeasHolder.GetChild(subtopic.keyIdeaIndex)).GetComponent<KeyIdeaHolder>();
+        keyIdeaHolder.GetComponent<RectTransform>().anchoredPosition = Vector3.zero;
+        keyIdeaHolder.FillKeyIdea(subtopic);
+    }
+
+    public void UpdateWeek() {
+        ShowCurrentWeekKeyIdeas();
     }
 }

@@ -2,7 +2,7 @@
     "isNewFile": true,
     "courses": [
         {
-            "name": "Programación y robótica para docentes",
+            "name": "Programación y robótica",
             "topics": [
                 {
                     "topicName": "Tema 1",
@@ -733,7 +733,7 @@
                             "description": "Programas para trabajar sentido espacial"
                         },
                         {
-                            "name": "Act2",
+                            "name": "Act3",
                             "week": 12,
                             "description": "Un recurso digital para cada necesidad"
                         },

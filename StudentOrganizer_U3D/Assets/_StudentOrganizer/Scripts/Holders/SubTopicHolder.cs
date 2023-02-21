@@ -8,7 +8,6 @@ public class SubTopicHolder : MonoBehaviour {
     [SerializeField] private TextMeshProUGUI nameText;
     [SerializeField] private Image backgroundImage;
     [SerializeField] private GameObject keyIdeaHolderPrefab;
-    [SerializeField] [ReadOnly] private List<Color> colors = new List<Color>() {Color.blue, Color.red, Color.green};
     [SerializeField] [ReadOnly] private SubTopic currentSubTopic;
 
     public SubTopic CurrentSubTopic {
@@ -19,9 +18,9 @@ public class SubTopicHolder : MonoBehaviour {
     public void CreateSubtopics(SubTopic subTopic) {
         currentSubTopic = subTopic;
         nameText.text = currentSubTopic.name;
-        backgroundImage.color = colors[currentSubTopic.courseID];
-        if (currentSubTopic.week != -1) {
-            ConvertToKeyIdea(GameManager.Instance.GetManager<KeyIdeaSelector>().GetKeyIdeaHolderByIndex(currentSubTopic.keyIdeaIndex));
+        backgroundImage.color = GameManager.Instance.CourseColors[currentSubTopic.courseID];
+        if (currentSubTopic.isKeyIdea) {
+            ConvertToKeyIdea(GameManager.Instance.GetManager<KeyIdeaManager>().GetKeyIdeaHolderByIndex(currentSubTopic.keyIdeaIndex));
         }
     }
 

@@ -75,8 +75,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4290216745
-  m_fontColor: {r: 0.16078432, g: 0.5137255, b: 0.7176471, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1666,7 +1666,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   topicText: {fileID: 8830949804834276115}
+  background: {fileID: 3427903051968357133}
   autoEvSubtopicPrefab: {fileID: 5539724947735853535, guid: 1d9aa36be4f4ada4d87e46bbfaa61a55, type: 3}
+  button: {fileID: 0}
   currentTopic:
     topicName: 
     subTopics: []
@@ -1732,7 +1734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9686275, g: 0.9686275, b: 0.9686275, a: 1}
+  m_Color: {r: 0.83921576, g: 0.83921576, b: 0.83921576, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1841,11 +1843,11 @@ MonoBehaviour:
         Vibration: 8
         Elasticity: 1
         FadeOutShake: 0
-      FromValue: {r: 0.9686275, g: 0.9686275, b: 0.9686275, a: 1}
-      ToValue: {r: 0.9686275, g: 0.9686275, b: 0.9686275, a: 1}
+      FromValue: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
+      ToValue: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
       CurrentValue: {r: 0.9686275, g: 0.20784315, b: 0.39607847, a: 1}
       Enabled: 1
-      StartColor: {r: 0.9686275, g: 0.9686275, b: 0.9686275, a: 1}
+      StartColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
       FromReferenceValue: 1
       ToReferenceValue: 0
       FromCustomValue: {r: 1, g: 1, b: 1, a: 1}
@@ -1923,11 +1925,11 @@ MonoBehaviour:
         Vibration: 8
         Elasticity: 1
         FadeOutShake: 0
-      FromValue: {r: 0.9686275, g: 0.9686275, b: 0.9686275, a: 1}
-      ToValue: {r: 1, g: 1, b: 1, a: 1}
+      FromValue: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
+      ToValue: {r: 0.31960785, g: 0.31960785, b: 0.31960785, a: 1}
       CurrentValue: {r: 0.9762466, g: 0.40022412, b: 0.53462934, a: 1}
       Enabled: 1
-      StartColor: {r: 0.9686275, g: 0.9686275, b: 0.9686275, a: 1}
+      StartColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
       FromReferenceValue: 1
       ToReferenceValue: 0
       FromCustomValue: {r: 1, g: 1, b: 1, a: 1}
@@ -2005,11 +2007,11 @@ MonoBehaviour:
         Vibration: 8
         Elasticity: 1
         FadeOutShake: 0
-      FromValue: {r: 0.9686275, g: 0.9686275, b: 0.9686275, a: 1}
-      ToValue: {r: 0.8686275, g: 0.8686275, b: 0.8686275, a: 1}
+      FromValue: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
+      ToValue: {r: 0.11960786, g: 0.11960786, b: 0.11960786, a: 1}
       CurrentValue: {r: 0.93927187, g: 0.037198782, b: 0.24768251, a: 1}
       Enabled: 1
-      StartColor: {r: 0.9686275, g: 0.9686275, b: 0.9686275, a: 1}
+      StartColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
       FromReferenceValue: 1
       ToReferenceValue: 0
       FromCustomValue: {r: 1, g: 1, b: 1, a: 1}
@@ -2087,11 +2089,11 @@ MonoBehaviour:
         Vibration: 8
         Elasticity: 1
         FadeOutShake: 0
-      FromValue: {r: 0.9686275, g: 0.9686275, b: 0.9686275, a: 1}
-      ToValue: {r: 0.9686275, g: 0.9686275, b: 0.9686275, a: 1}
+      FromValue: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
+      ToValue: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
       CurrentValue: {r: 1, g: 0.17647064, b: 0.3686275, a: 1}
       Enabled: 1
-      StartColor: {r: 0.9686275, g: 0.9686275, b: 0.9686275, a: 1}
+      StartColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
       FromReferenceValue: 1
       ToReferenceValue: 0
       FromCustomValue: {r: 1, g: 1, b: 1, a: 1}
@@ -2169,11 +2171,11 @@ MonoBehaviour:
         Vibration: 8
         Elasticity: 1
         FadeOutShake: 0
-      FromValue: {r: 0.9686275, g: 0.9686275, b: 0.9686275, a: 1}
-      ToValue: {r: 0.9686275, g: 0.9686275, b: 0.9686275, a: 0.5}
+      FromValue: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
+      ToValue: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 0.5}
       CurrentValue: {r: 0, g: 0, b: 0, a: 0}
       Enabled: 1
-      StartColor: {r: 0.9686275, g: 0.9686275, b: 0.9686275, a: 1}
+      StartColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
       FromReferenceValue: 1
       ToReferenceValue: 0
       FromCustomValue: {r: 1, g: 1, b: 1, a: 1}

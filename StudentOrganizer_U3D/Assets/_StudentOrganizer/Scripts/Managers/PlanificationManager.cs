@@ -4,9 +4,10 @@ using System.Linq;
 using Doozy.Runtime.UIManager.Components;
 using Sirenix.OdinInspector;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class CourseSelector : BaseManager {
+public class PlanificationManager : BaseManager {
     [FoldoutGroup("UI")] [FoldoutGroup("UI/Labels")] [SerializeField]
     private List<TextMeshProUGUI> courseNamesText;
 
@@ -17,22 +18,24 @@ public class CourseSelector : BaseManager {
     private List<UITab> uiTabs;
 
     [FoldoutGroup("UI/Buttons")] [SerializeField]
+    private UIButton autoAssignButton;
+    
+    [FoldoutGroup("UI/Buttons")] [SerializeField]
     private UIButton previousButton;
 
     [FoldoutGroup("UI/Buttons")] [SerializeField]
     private UIButton nextButton;
 
+
     [FoldoutGroup("Debug")] [SerializeField]
     private int courseIndex = 0;
+
 
     private void Start() {
         CleanUI();
         SetUIFunctionality();
     }
 
-    // private void OnDisable() {
-    //     CleanUI();
-    // }
 
     private void CleanUI() {
         for (int i = 0; i < courseHolders.Count; i++) {
@@ -53,9 +56,18 @@ public class CourseSelector : BaseManager {
         previousButton.onClickEvent.AddListener(PreviousTopics);
         nextButton.onClickEvent.RemoveAllListeners();
         nextButton.onClickEvent.AddListener(NextTopics);
+        autoAssignButton.onClickEvent.RemoveAllListeners();
+        autoAssignButton.onClickEvent.AddListener(AutoAssign);
     }
 
-    public void CreateContent() {
+    public void OpenView() {
+        CleanUI();
+        CreateContent();
+        SetCourseIndex(0);
+        uiTabs[0].targetContainer.Show();
+    }
+
+    private void CreateContent() {
         List<Course> courses = GameManager.GetManager<CourseReader>().Courses;
         for (int i = 0; i < courses.Count; i++) {
             Course course = courses[i];
@@ -88,5 +100,40 @@ public class CourseSelector : BaseManager {
         //Get Subtopic
         var subTopicH = subtopicsH.Find((sth) => sth.CurrentSubTopic.subtopicID == subTopic.subtopicID);
         subTopicH.UpdateStatus(subTopic);
+    }
+    
+    private void AutoAssign() {
+        //Set UI
+        GameManager.GetManager<KeyIdeaManager>().CleanUI();
+        List<Course> courses = GameManager.GetManager<CourseReader>().Courses;
+        Dictionary<int, List<SubTopic>> weekSubtopicDic = new Dictionary<int, List<SubTopic>>();
+        for (int i = 0; i < courses.Count; i++) {
+            Course course = courses[i];
+            for (int j = 0; j < course.topics.Count; j++) {
+                Topic topic = course.topics[j];
+                for (int k = 0; k < topic.subTopics.Count; k++) {
+                    SubTopic subTopic = topic.subTopics[k]; 
+                    //Set KeyIdeaIndex
+                    if (!weekSubtopicDic.ContainsKey(subTopic.week)) {
+                        weekSubtopicDic.Add(subTopic.week, new List<SubTopic>());
+                    }
+
+                    subTopic.isKeyIdea = true;
+                    subTopic.keyIdeaIndex = weekSubtopicDic[subTopic.week].Count;
+                    weekSubtopicDic[subTopic.week].Add(subTopic);
+                    //Create subtopic
+                    GameManager.GetManager<KeyIdeaManager>().CreateKeyIdea(subTopic);
+                }
+            }
+        }
+
+        // foreach (KeyValuePair<int, List<SubTopic>> weekSubtopics in weekSubtopicDic) {
+        //     for (int i = 0; i < weekSubtopics.Value.Count; i++) {
+        //         GameManager.GetManager<KeyIdeaManager>().CreateKeyIdea(weekSubtopics.Value[i]);
+        //     }
+        // }
+        //GameManager.GetManager<KeyIdeaManager>().UpdateWeek();
+        
+        // OpenView();
     }
 }

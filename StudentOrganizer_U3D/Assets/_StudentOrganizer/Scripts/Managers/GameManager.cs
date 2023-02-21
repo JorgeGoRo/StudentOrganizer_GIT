@@ -1,8 +1,21 @@
 using System;
 using System.Collections.Generic;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour {
+
+    [ReadOnly] public string fileName;
+    
+    [FoldoutGroup("UI/Colors")] [SerializeField]
+    private List<Color> courseColors = new(){Color.blue, Color.red, Color.green};
+
+    public List<Color> CourseColors {
+        get {
+            return courseColors;
+        }
+    }
+    
     private List<BaseManager> _managers;
     private Dictionary<Type, BaseManager>_managersDictionary;
 
@@ -17,9 +30,10 @@ public class GameManager : MonoBehaviour {
     }
 
     private void Start() {
-        GetManager<CourseReader>().ReadCourses(() => {
-            GetManager<CourseSelector>().CreateContent();
-        });
+        // GetManager<CourseReader>().LoadFile(() => {
+        //     GetManager<StepSelector>().OpenView(Steps.PLANIFICATION);
+        //     //GetManager<CourseSelector>().CreateContent();
+        // });
     }
 
     public void GetManagers() {

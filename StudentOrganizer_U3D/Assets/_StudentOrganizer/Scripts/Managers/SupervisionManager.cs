@@ -21,7 +21,6 @@ public class SupervisionManager : BaseManager {
     [FoldoutGroup("UI/Buttons")] [SerializeField]
     private UIButton nextButton;
 
-
     [FoldoutGroup("UI/Labels")] [SerializeField]
     private TextMeshProUGUI currentWeekText;
 
@@ -30,6 +29,9 @@ public class SupervisionManager : BaseManager {
 
     [FoldoutGroup("UI/Prefabs")] [SerializeField]
     private GameObject supervisionCoursePrefab;
+
+    [FoldoutGroup("UI/Colors")] [SerializeField]
+    private Color selectedColor = Color.green;
 
     [FoldoutGroup("UI/Strategy")] [SerializeField]
     private TextMeshProUGUI keyIdeaName;
@@ -127,7 +129,7 @@ public class SupervisionManager : BaseManager {
         //Foreground blocker
         foregroundBlocker.SetActive(false);
         //Name Text
-        keyIdeaName.text = subtopic.name;
+        keyIdeaName.text = subtopic.description;
         //Dropdown
         strategyDropdown.SetValueWithoutNotify((int) subtopic.studyStrategy);
         strategyDropdown.onValueChanged.RemoveAllListeners();
@@ -144,13 +146,13 @@ public class SupervisionManager : BaseManager {
         for (int i = 0; i < satisfationButtons.Count; i++) {
             UIButton satisfationButton = satisfationButtons[i];
             int satisfationLevel = i;
-            satisfationButton.GetComponentInChildren<Image>().color = subtopic.satisfaction == satisfationLevel ? Color.green : Color.white;
+            satisfationButton.GetComponentInChildren<Image>().color = subtopic.satisfaction == satisfationLevel ? selectedColor : Color.white;
             satisfationButton.onClickEvent.RemoveAllListeners();
             satisfationButton.onClickEvent.AddListener(() => {
                 subtopic.satisfaction = satisfationLevel;
                 for (int j = 0; j < satisfationButtons.Count; j++) {
                     UIButton satisfationButtonAux = satisfationButtons[j];
-                    satisfationButtonAux.GetComponentInChildren<Image>().color = subtopic.satisfaction == j ? Color.green : Color.white;
+                    satisfationButtonAux.GetComponentInChildren<Image>().color = subtopic.satisfaction == j ? selectedColor : Color.white;
                 }
             });
         }
@@ -185,7 +187,7 @@ public class SupervisionManager : BaseManager {
         List<Transform> subtopicToShow = new List<Transform>();
         for (int i = 0; i < hiddenSubtopicsHolder.childCount; i++) {
             SupervisionSubtopicHolder supervisionSubtopicHolder = hiddenSubtopicsHolder.GetChild(i).GetComponent<SupervisionSubtopicHolder>();
-            if (supervisionSubtopicHolder.CurrentSubTopic.week == currentWeek) {
+            if (supervisionSubtopicHolder.CurrentSubTopic.week == (currentWeek + 1)) {
                 subtopicToShow.Add(supervisionSubtopicHolder.transform);
             }
         }
@@ -197,7 +199,7 @@ public class SupervisionManager : BaseManager {
                 SupervisionCourseHolder supervisionCourseHolder = coursesContentHolder.GetChild(i).GetComponent<SupervisionCourseHolder>();
                 for (int j = 0; j < supervisionCourseHolder.SubtopicsContentHolder.childCount; j++) {
                     SupervisionSubtopicHolder supervisionSubtopicHolder = supervisionCourseHolder.SubtopicsContentHolder.GetChild(j).GetComponent<SupervisionSubtopicHolder>();
-                    if (supervisionSubtopicHolder.CurrentSubTopic.week != currentWeek) {
+                    if (supervisionSubtopicHolder.CurrentSubTopic.week != (currentWeek + 1)) {
                         subtopicsToHide.Add(supervisionSubtopicHolder.transform);
                     }
                 }
@@ -227,7 +229,7 @@ public class SupervisionManager : BaseManager {
                     SupervisionCourseHolder supervisionCourseHolder = coursesContentHolder.GetChild(i).GetComponent<SupervisionCourseHolder>();
                     for (int j = 0; j < supervisionCourseHolder.SubtopicsContentHolder.childCount; j++) {
                         SupervisionSubtopicHolder supervisionSubtopicHolder = supervisionCourseHolder.SubtopicsContentHolder.GetChild(j).GetComponent<SupervisionSubtopicHolder>();
-                        if (supervisionSubtopicHolder.CurrentSubTopic.week == currentWeek) {
+                        if (supervisionSubtopicHolder.CurrentSubTopic.week == (currentWeek+1)) {
                             supervisionSubtopicsHolder.Add(supervisionSubtopicHolder.transform);
                         }
                     }

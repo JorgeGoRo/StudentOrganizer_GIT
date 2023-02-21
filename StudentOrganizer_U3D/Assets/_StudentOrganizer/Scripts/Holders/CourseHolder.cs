@@ -25,6 +25,7 @@ public class CourseHolder : MonoBehaviour {
 
     public void CreateCourses(Course course) {
         currentCourse = course;
+        topicHolders = new List<TopicHolder>();
         for (int i = 0; i < currentCourse.topics.Count; i++) {
             Topic topic = currentCourse.topics[i];
             topic.courseID = currentCourse.courseID;
@@ -63,7 +64,9 @@ public class CourseHolder : MonoBehaviour {
         int min = currentCoursePack * 4;
         int max = (currentCoursePack + 1) * 4;
         for (int i = 0; i < topicHolders.Count; i++) {
-            topicHolders[i].gameObject.SetActive(i >= min && i < max);
+            // if (topicHolders[i] != null) {
+                topicHolders[i].gameObject.SetActive(i >= min && i < max);
+            // }
         }
     }
 }

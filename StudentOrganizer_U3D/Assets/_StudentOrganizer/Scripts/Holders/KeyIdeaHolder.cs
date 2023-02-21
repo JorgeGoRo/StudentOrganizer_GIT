@@ -8,7 +8,6 @@ using UnityEngine.UI;
 public class KeyIdeaHolder : MonoBehaviour {
     [SerializeField] private TextMeshProUGUI nameText;
     [SerializeField] private Image backgroundImage;
-    [SerializeField] [ReadOnly] private List<Color> colors = new List<Color>() {Color.blue, Color.red, Color.green};
     [SerializeField] [ReadOnly] private SubTopic currentSubTopic;
 
     public SubTopic CurrentSubTopic {
@@ -30,8 +29,8 @@ public class KeyIdeaHolder : MonoBehaviour {
         }
 
         nameText.text = currentSubTopic.name;
-        backgroundImage.color = colors[currentSubTopic.courseID];
-        GameManager.Instance.GetManager<KeyIdeaSelector>().HideKeyIdeaIfNeeded(this);
+        backgroundImage.color = GameManager.Instance.CourseColors[currentSubTopic.courseID];
+        GameManager.Instance.GetManager<KeyIdeaManager>().HideKeyIdeaIfNeeded(this);
     }
 
     public void DeleteKeyIdea() {

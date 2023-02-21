@@ -20,7 +20,7 @@ public class AutoEvSubtopicHolder : MonoBehaviour {
     public void FillSubtopic(SubTopic subtopic) {
         currentSubTopic = subtopic;
         subtopicText.text = currentSubTopic.name + " " + currentSubTopic.description;
-        strategyText.text = currentSubTopic.studyStrategy.ToString();
-        satisfactionImage.sprite = satisfactionIcons[currentSubTopic.satisfaction];
+        strategyText.text = StudyStrategyConst.STRATEGIES[currentSubTopic.studyStrategy];
+        satisfactionImage.sprite = currentSubTopic.satisfaction != -1 ? satisfactionIcons[currentSubTopic.satisfaction] : null;
     }
 }

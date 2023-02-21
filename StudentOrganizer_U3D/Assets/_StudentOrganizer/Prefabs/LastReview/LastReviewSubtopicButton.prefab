@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8749523101939816410}
   - component: {fileID: 8656599679114068704}
   - component: {fileID: 5137075234628056696}
-  - component: {fileID: 5739018938476973584}
+  - component: {fileID: 8754761678979072833}
   m_Layer: 5
   m_Name: LastReviewSubtopicButton
   m_TagString: Untagged
@@ -1518,7 +1518,7 @@ MonoBehaviour:
       ToCustomValue: 0
       FromOffset: 0
       ToOffset: 0.4
---- !u!114 &5739018938476973584
+--- !u!114 &8754761678979072833
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1531,6 +1531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   subtopicText: {fileID: 5023071268744541833}
+  background: {fileID: 1200777826681476759}
   button: {fileID: 0}
   currentSubTopic:
     name: 
@@ -1542,6 +1543,7 @@ MonoBehaviour:
     keyIdeaIndex: 0
     isKeyIdea: 0
     studyStrategy: 0
+    extraStudyStrategy: 0
     stimatedTime: 0
     satisfaction: 0
 --- !u!1 &1064757516777388808
@@ -1619,8 +1621,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4290216745
-  m_fontColor: {r: 0.16078432, g: 0.5137255, b: 0.7176471, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1740,7 +1742,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9686275, g: 0.9686275, b: 0.9686275, a: 1}
+  m_Color: {r: 0.83921576, g: 0.83921576, b: 0.83921576, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

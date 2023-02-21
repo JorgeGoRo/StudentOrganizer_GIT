@@ -8,6 +8,7 @@ using UnityEngine;
 using UnityEngine.SubsystemsImplementation;
 
 public enum Steps {
+    FIRST_VIEW,
     PLANIFICATION,
     SUPERVISION,
     AUTO_EVALUATION,
@@ -28,7 +29,9 @@ public class StepSelector : BaseManager {
     private UIButton lastReviewButton;
 
     [FoldoutGroup("UI/Views")] [SerializeField]
-    private UIContainer planificationView;
+    private UIContainer firstView;
+
+    [FoldoutGroup("UI/Views")] [SerializeField] private UIContainer planificationView;
 
     [FoldoutGroup("UI/Views")] [SerializeField]
     private UIContainer supervisionView;
@@ -54,14 +57,19 @@ public class StepSelector : BaseManager {
         lastReviewButton.onClickEvent.AddListener(() => OpenView(Steps.LAST_REVIEW));
     }
 
-    private void OpenView(Steps currentStep) {
+    public void OpenView(Steps currentStep) {
+        firstView.Hide();
         planificationView.Hide();
         supervisionView.Hide();
         autoEvaluationView.Hide();
         lastReviewView.Hide();
+        if (currentStep == Steps.FIRST_VIEW) {
+            firstView.Show();
+        }
+        
         if (currentStep == Steps.PLANIFICATION) {
             planificationView.Show();
-            //todo: step specifics
+            GameManager.GetManager<PlanificationManager>().OpenView();
         }
 
         if (currentStep == Steps.SUPERVISION) {

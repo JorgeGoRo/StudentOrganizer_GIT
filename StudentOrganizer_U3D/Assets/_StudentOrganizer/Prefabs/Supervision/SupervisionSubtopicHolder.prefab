@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.85098046, g: 0.85098046, b: 0.85098046, a: 1}
+  m_Color: {r: 0.83921576, g: 0.83921576, b: 0.83921576, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2049,6 +2049,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 7981392362306441915}
   backgroundImage: {fileID: 7981392361409280815}
+  button: {fileID: 0}
   colors:
   - {r: 0, g: 0, b: 1, a: 1}
   - {r: 1, g: 0, b: 0, a: 1}
@@ -2061,7 +2062,11 @@ MonoBehaviour:
     topicID: 0
     subtopicID: 0
     keyIdeaIndex: 0
-    isUsed: 0
+    isKeyIdea: 0
+    studyStrategy: 0
+    extraStudyStrategy: 0
+    stimatedTime: 0
+    satisfaction: 0
 --- !u!1 &7981392362306441917
 GameObject:
   m_ObjectHideFlags: 0
@@ -2138,7 +2143,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4290216745
-  m_fontColor: {r: 0.16078432, g: 0.5137255, b: 0.7176471, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

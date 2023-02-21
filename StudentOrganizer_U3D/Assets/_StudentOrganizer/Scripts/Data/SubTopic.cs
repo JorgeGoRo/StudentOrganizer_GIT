@@ -1,5 +1,6 @@
 ﻿using System;
 using Newtonsoft.Json;
+using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -28,8 +29,9 @@ public class SubTopic {
     [SerializeField] public int keyIdeaIndex;
     [SerializeField] public bool isKeyIdea;
     [SerializeField] public StudyStrategy studyStrategy;
+    [SerializeField] public StudyStrategy extraStudyStrategy;
     [SerializeField] public int stimatedTime;
-    [FormerlySerializedAs("satisfation")] [SerializeField] public int satisfaction; //0 worst, 2 best
+    [SerializeField] public int satisfaction; //0 worst, 2 best
     
 
     [JsonConstructor]
@@ -39,11 +41,12 @@ public class SubTopic {
         this.description = description;
         this.isKeyIdea = false;
         this.studyStrategy = StudyStrategy.NONE;
+        this.extraStudyStrategy = StudyStrategy.NONE;
         this.stimatedTime = 0;
         this.satisfaction = -1;
     }
 
-    public SubTopic(string name, int week, string description, int courseID, int topicID, int subtopicID, int keyIdeaIndex, bool isKeyIdea, StudyStrategy studyStrategy, int stimatedTime, int satisfaction) {
+    public SubTopic(string name, int week, string description, int courseID, int topicID, int subtopicID, int keyIdeaIndex, bool isKeyIdea, StudyStrategy studyStrategy, StudyStrategy extraStudyStrategy, int stimatedTime, int satisfaction) {
         this.name = name;
         this.week = week;
         this.description = description;
@@ -53,7 +56,10 @@ public class SubTopic {
         this.keyIdeaIndex = keyIdeaIndex;
         this.isKeyIdea = isKeyIdea;
         this.studyStrategy = studyStrategy;
+        this.extraStudyStrategy = extraStudyStrategy;
         this.stimatedTime = stimatedTime;
         this.satisfaction = satisfaction;
     }
+
+    
 }

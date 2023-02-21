@@ -66,4 +66,16 @@ public static class StudyStrategyConst {
         "• El esquema numérico: incide más en el orden jerárquico de las ideas, poniendo las principales arriba de forma numerada (1, 2, 3,…), y las subordinadas debajo incluyendo el número principal (1.1, 1.2, 1.3,…).\n\n" +
         "• El cuadro sinóptico: representa una visión global de ideas interrelacionadas a través de un cuadro de doble entrada. Facilita la visión de la estructura de relación y su interdependencia.\n\n" +
         "Entre las herramientas TIC que podemos utilizar para realizar esquemas, destaca la facilidad de los software de presentación, tipo PowerPoint o Google Slides, ya que se puede añadir rápidamente cuadros de texto, flechas, llaves,...además de que se ofrecen elementos rápidos de tipos de esquemas (de secuencia, jerárquicos, etc.).\n";
+
+   public static Dictionary<StudyStrategy, string> STRATEGIES = new Dictionary<StudyStrategy, string>{
+        {StudyStrategy.NONE, "-" },
+        {StudyStrategy.PARAPHRASING, "Parafraseo" },
+        {StudyStrategy.ANALOGIES, "Analogías" },
+        {StudyStrategy.EXAMPLES, "Ejemplos" },
+        {StudyStrategy.TAKING_NOTES, "Tomar notas" },
+        {StudyStrategy.RESUME, "Resumen" },
+        {StudyStrategy.SORT_OUT, "Clasificar" },
+        {StudyStrategy.CONCEPTUAL_MAP, "Mapa conceptual" },
+        {StudyStrategy.SCHEME, "Esquema" },
+    };
 }

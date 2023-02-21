@@ -6,18 +6,20 @@ using Doozy.Runtime.UIManager.Components;
 using Newtonsoft.Json;
 using SimpleFileBrowser;
 using Sirenix.OdinInspector;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 public class CourseReader : BaseManager {
-    [FoldoutGroup("Settings")] [SerializeField]
-    private bool showFileBrowser = false;
-
     [FoldoutGroup("UI")] [FoldoutGroup("UI/Buttons")] [SerializeField]
     private UIButton saveButton;
 
     [FoldoutGroup("UI/Buttons")] [SerializeField]
-    private UIButton loadButton;
+    private List<UIButton> loadButtons;
+    
+    [FoldoutGroup("UI/Buttons")] [SerializeField]
+    private UIButton closeAppButton;
 
     [FoldoutGroup("Debug")] [SerializeField]
     private StudentOrganizer studentOrganizer;
@@ -26,46 +28,53 @@ public class CourseReader : BaseManager {
         get { return studentOrganizer.courses; }
     }
 
+    private string filePath;
+    private bool isNewFile = true;
+
     private void Start() {
         SetUIFunctionality();
     }
 
     private void SetUIFunctionality() {
+        saveButton.onClickEvent.RemoveAllListeners();
         saveButton.onClickEvent.AddListener(() => { SaveFile(); });
-        loadButton.onClickEvent.AddListener(() => { LoadFile(GameManager.GetManager<CourseSelector>().CreateContent); });
+        for (int i = 0; i < loadButtons.Count; i++) {
+            UIButton loadButton = loadButtons[i];
+            loadButton.onClickEvent.RemoveAllListeners();
+            loadButton.onClickEvent.AddListener(() => { LoadFile(() => { GameManager.GetManager<StepSelector>().OpenView(Steps.PLANIFICATION); }); });
+        }
+        closeAppButton.onClickEvent.RemoveAllListeners();
+        closeAppButton.onClickEvent.AddListener(() => {
+            SaveFile(() => Application.Quit()); 
+            
+        });
     }
 
     #region MODIFY COURSES
 
-    public void SetSubtopicAsUsed(SubTopic targetSubtopic, bool isUsed) {
+    public void SetSubtopicAsUsed(SubTopic targetSubtopic, bool isKeyIdea) {
         var course = studentOrganizer.courses[targetSubtopic.courseID];
         var topic = course.topics[targetSubtopic.topicID];
         var subTopic = topic.subTopics[targetSubtopic.subtopicID];
-        subTopic.isKeyIdea = isUsed;
-        subTopic.week = isUsed ? GameManager.GetManager<KeyIdeaSelector>().CurrentWeek : -1;
-        subTopic.keyIdeaIndex = isUsed ? targetSubtopic.keyIdeaIndex : -1;
-        GameManager.GetManager<CourseSelector>().UpdateSubtopicHolderStatus(subTopic);
+        subTopic.isKeyIdea = isKeyIdea;
+        subTopic.week = isKeyIdea ? (GameManager.GetManager<KeyIdeaManager>().CurrentWeek + 1) : subTopic.week;
+        subTopic.keyIdeaIndex = isKeyIdea ? targetSubtopic.keyIdeaIndex : -1;
+        GameManager.GetManager<PlanificationManager>().UpdateSubtopicHolderStatus(subTopic);
     }
 
     #endregion
 
     #region READ COURSES
 
-    public void ReadCourses(UnityAction OnFinishCallback) {
-        if (showFileBrowser) {
-            LoadFile(OnFinishCallback);
-        } else {
-            CreateTestCourses();
-        }
-    }
-
-    private void SaveFile() {
+    public void SaveFile(UnityAction onFinishCallback = null) {
+        Debug.Log("SAVING FILE");
         FileBrowser.SetFilters(true, new FileBrowser.Filter("Course Files", ".json"));
         FileBrowser.AddQuickLink("C", "C:", null);
-        StartCoroutine(ShowSaveDialogCoroutine(null));
+        StartCoroutine(ShowSaveDialogCoroutine(onFinishCallback));
+        // StartCoroutine(SaveNoDialogCoroutine(null));
     }
 
-    private void LoadFile(UnityAction OnFinishCallback) {
+    public void LoadFile(UnityAction OnFinishCallback) {
         FileBrowser.SetFilters(true, new FileBrowser.Filter("Course Files", ".json"));
         FileBrowser.AddQuickLink("C", "C:", null);
         StartCoroutine(ShowLoadDialogCoroutine(OnFinishCallback));
@@ -79,37 +88,59 @@ public class CourseReader : BaseManager {
 
             byte[] bytes = FileBrowserHelpers.ReadBytesFromFile(FileBrowser.Result[0]);
             string destinationPath = Path.Combine(Application.persistentDataPath, FileBrowserHelpers.GetFilename(FileBrowser.Result[0]));
+            filePath = FileBrowser.Result[0];
             FileBrowserHelpers.CopyFile(FileBrowser.Result[0], destinationPath);
-
             string result = System.Text.Encoding.UTF8.GetString(bytes);
-            ParseCourses(result, OnFinishCallback);
+            ParseCourses(FileBrowserHelpers.GetFilename(FileBrowser.Result[0]), result, OnFinishCallback);
         }
     }
 
     IEnumerator ShowSaveDialogCoroutine(UnityAction OnFinishCallback) {
-        yield return FileBrowser.WaitForSaveDialog(FileBrowser.PickMode.FilesAndFolders, false, null, ".json", "Save File", "Save");
-        if (FileBrowser.Success) {
-            for (int i = 0; i < FileBrowser.Result.Length; i++)
-                Debug.Log(FileBrowser.Result[i]);
-            string path = FileBrowserHelpers.GetDirectoryName(FileBrowser.Result[0]);
-            Debug.Log("Path: " + path);
-            string fileName = FileBrowserHelpers.GetFilename(FileBrowser.Result[0]);
-            Debug.Log("FileName: " + fileName);
-            if (!FileBrowserHelpers.FileExists(fileName)) {
-                FileBrowserHelpers.CreateFileInDirectory(path, fileName);
-            }
-
-            string studentOrganizerJson = JsonConvert.SerializeObject(studentOrganizer);
-            Debug.Log("StudentOrganizerJson: " + studentOrganizerJson);
-            FileBrowserHelpers.WriteTextToFile(path + "\\" + fileName, studentOrganizerJson);
-        }
+        string newFileName = FileBrowserHelpers.GetFilename(filePath).Replace(".json", "");
+        newFileName += isNewFile ? "_estudiante.json" : ".json";
+        yield return null;
+        //yield return FileBrowser.WaitForSaveDialog(FileBrowser.PickMode.FilesAndFolders, false, null, newFileName, "Save File", "Save");
+        // if (FileBrowser.Success) {
+        //     for (int i = 0; i < FileBrowser.Result.Length; i++)
+        //         Debug.Log(FileBrowser.Result[i]);
+        //     string path = FileBrowserHelpers.GetDirectoryName(FileBrowser.Result[0]);
+        //     Debug.Log("Path: " + path);
+        //     string fileName = FileBrowserHelpers.GetFilename(FileBrowser.Result[0]);
+        //     Debug.Log("FileName: " + fileName);
+        //     if (!FileBrowserHelpers.FileExists(fileName)) {
+        //         FileBrowserHelpers.CreateFileInDirectory(path, fileName);
+        //     }
+        //
+        //     string studentOrganizerJson = JsonConvert.SerializeObject(studentOrganizer);
+        //     Debug.Log("StudentOrganizerJson: " + studentOrganizerJson);
+        //     FileBrowserHelpers.WriteTextToFile(path + "\\" + fileName, studentOrganizerJson);
+        // }
+        string studentOrganizerJson = JsonConvert.SerializeObject(studentOrganizer);
+        Debug.Log("StudentOrganizerJson: " + studentOrganizerJson);
+        FileBrowserHelpers.WriteTextToFile(FileBrowserHelpers.GetDirectoryName(FileBrowser.Result[0]) + "\\" + newFileName, studentOrganizerJson);
+        OnFinishCallback?.Invoke();
     }
 
-    private void ParseCourses(string coursesJson, UnityAction OnFinishCallback) {
+    // IEnumerator SaveNoDialogCoroutine(UnityAction OnFinishCallback) {
+    //     yield return null;
+    //     fileName = userNameInput.text;
+    //     if (!FileBrowserHelpers.FileExists(fileName)) {
+    //         FileBrowserHelpers.CreateFileInDirectory(filePath, fileName);
+    //     }
+    //
+    //     string studentOrganizerJson = JsonConvert.SerializeObject(studentOrganizer);
+    //     Debug.Log("StudentOrganizerJson: " + studentOrganizerJson);
+    //     FileBrowserHelpers.WriteTextToFile(filePath + "\\" + fileName, studentOrganizerJson);
+    // }
+
+    private void ParseCourses(string fileName, string coursesJson, UnityAction OnFinishCallback) {
         studentOrganizer = JsonConvert.DeserializeObject<StudentOrganizer>(coursesJson);
 
         if (studentOrganizer.isNewFile) {
+            isNewFile = true;
             ResetStudentOrganizer();
+        } else {
+            isNewFile = false;
         }
 
         OnFinishCallback?.Invoke();
@@ -125,7 +156,7 @@ public class CourseReader : BaseManager {
                     studentOrganizer.courses[i].topics[j].subTopics[k].courseID = i;
                     studentOrganizer.courses[i].topics[j].subTopics[k].topicID = j;
                     studentOrganizer.courses[i].topics[j].subTopics[k].subtopicID = k;
-                    studentOrganizer.courses[i].topics[j].subTopics[k].week = -1;
+                    // studentOrganizer.courses[i].topics[j].subTopics[k].week--;
                     studentOrganizer.courses[i].topics[j].subTopics[k].keyIdeaIndex = -1;
                     studentOrganizer.courses[i].topics[j].subTopics[k].isKeyIdea = false;
                 }
@@ -133,6 +164,7 @@ public class CourseReader : BaseManager {
         }
 
         studentOrganizer.isNewFile = false;
+        // SaveFile(false);
     }
 
     private void CreateTestCourses() {

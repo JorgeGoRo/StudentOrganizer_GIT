@@ -11,7 +11,6 @@ public class SupervisionSubtopicHolder : MonoBehaviour {
     [SerializeField] private TextMeshProUGUI nameText;
     [SerializeField] private Image backgroundImage;
     [SerializeField] [ReadOnly] private UIButton button;
-    [SerializeField] [ReadOnly] private List<Color> colors = new List<Color>() {Color.blue, Color.red, Color.green};
     [SerializeField] [ReadOnly] private SubTopic currentSubTopic;
 
     public SubTopic CurrentSubTopic {
@@ -26,7 +25,7 @@ public class SupervisionSubtopicHolder : MonoBehaviour {
     public void CreateSubtopics(SubTopic subTopic, UnityAction<SubTopic> onClickAction) {
         currentSubTopic = subTopic;
         nameText.text = currentSubTopic.name;
-        backgroundImage.color = colors[currentSubTopic.courseID];
+        backgroundImage.color = GameManager.Instance.CourseColors[currentSubTopic.courseID];
         button.onClickEvent.RemoveAllListeners();
         button.onClickEvent.AddListener(() => onClickAction?.Invoke(currentSubTopic));
     }

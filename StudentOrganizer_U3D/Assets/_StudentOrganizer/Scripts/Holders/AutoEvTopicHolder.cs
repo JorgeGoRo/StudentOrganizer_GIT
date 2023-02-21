@@ -6,9 +6,11 @@ using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class AutoEvTopicHolder : MonoBehaviour {
     [SerializeField] private TextMeshProUGUI topicText;
+    [SerializeField] private Image background;
     [SerializeField] private GameObject autoEvSubtopicPrefab;
     [SerializeField] [ReadOnly] private UIButton button;
     [SerializeField] [ReadOnly] private Topic currentTopic;
@@ -34,6 +36,7 @@ public class AutoEvTopicHolder : MonoBehaviour {
     public void FillTopic(Topic topic, Transform autoEvSubtopicsHolder, UnityAction<Topic> OnClickAction) {
         currentTopic = topic;
         topicText.text = topic.topicName;
+        background.color = GameManager.Instance.CourseColors[topic.courseID];
         button.onClickEvent.RemoveAllListeners();
         button.onClickEvent.AddListener(() => {
             CleanUI(autoEvSubtopicsHolder);
