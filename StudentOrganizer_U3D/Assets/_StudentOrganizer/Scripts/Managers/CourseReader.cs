@@ -17,7 +17,7 @@ public class CourseReader : BaseManager {
 
     [FoldoutGroup("UI/Buttons")] [SerializeField]
     private List<UIButton> loadButtons;
-    
+
     [FoldoutGroup("UI/Buttons")] [SerializeField]
     private UIButton closeAppButton;
 
@@ -43,11 +43,9 @@ public class CourseReader : BaseManager {
             loadButton.onClickEvent.RemoveAllListeners();
             loadButton.onClickEvent.AddListener(() => { LoadFile(() => { GameManager.GetManager<StepSelector>().OpenView(Steps.PLANIFICATION); }); });
         }
+
         closeAppButton.onClickEvent.RemoveAllListeners();
-        closeAppButton.onClickEvent.AddListener(() => {
-            SaveFile(() => Application.Quit()); 
-            
-        });
+        closeAppButton.onClickEvent.AddListener(() => { SaveFile(() => Application.Quit()); });
     }
 
     #region MODIFY COURSES
@@ -69,19 +67,35 @@ public class CourseReader : BaseManager {
     public void SaveFile(UnityAction onFinishCallback = null) {
         Debug.Log("SAVING FILE");
         FileBrowser.SetFilters(true, new FileBrowser.Filter("Course Files", ".json"));
+        #if UNITY_ANDROID
+        FileBrowser.AddQuickLink("C", Application.persistentDataPath, null);
+        #endif
+        #if !UNITY_ANDROID
         FileBrowser.AddQuickLink("C", "C:", null);
+        #endif
+        
         StartCoroutine(ShowSaveDialogCoroutine(onFinishCallback));
         // StartCoroutine(SaveNoDialogCoroutine(null));
     }
 
     public void LoadFile(UnityAction OnFinishCallback) {
         FileBrowser.SetFilters(true, new FileBrowser.Filter("Course Files", ".json"));
-        FileBrowser.AddQuickLink("C", "C:", null);
+#if UNITY_ANDROID
+        FileBrowser.AddQuickLink("Files", Application.persistentDataPath, null);
+#endif
+#if !UNITY_ANDROID
+        FileBrowser.AddQuickLink("Files", "C:", null);
+#endif
         StartCoroutine(ShowLoadDialogCoroutine(OnFinishCallback));
     }
 
     IEnumerator ShowLoadDialogCoroutine(UnityAction OnFinishCallback) {
+        #if UNITY_ANDROID
+        yield return FileBrowser.WaitForLoadDialog(FileBrowser.PickMode.FilesAndFolders, false, Application.persistentDataPath + "/..", null, "Load Files and Folders", "Load");
+        #endif
+        #if !UNITY_ANDROID
         yield return FileBrowser.WaitForLoadDialog(FileBrowser.PickMode.FilesAndFolders, false, null, null, "Load Files and Folders", "Load");
+        #endif
         if (FileBrowser.Success) {
             for (int i = 0; i < FileBrowser.Result.Length; i++)
                 Debug.Log(FileBrowser.Result[i]);
@@ -89,7 +103,9 @@ public class CourseReader : BaseManager {
             byte[] bytes = FileBrowserHelpers.ReadBytesFromFile(FileBrowser.Result[0]);
             string destinationPath = Path.Combine(Application.persistentDataPath, FileBrowserHelpers.GetFilename(FileBrowser.Result[0]));
             filePath = FileBrowser.Result[0];
+            #if !UNITY_ANDROID
             FileBrowserHelpers.CopyFile(FileBrowser.Result[0], destinationPath);
+            #endif
             string result = System.Text.Encoding.UTF8.GetString(bytes);
             ParseCourses(FileBrowserHelpers.GetFilename(FileBrowser.Result[0]), result, OnFinishCallback);
         }
@@ -99,22 +115,6 @@ public class CourseReader : BaseManager {
         string newFileName = FileBrowserHelpers.GetFilename(filePath).Replace(".json", "");
         newFileName += isNewFile ? "_estudiante.json" : ".json";
         yield return null;
-        //yield return FileBrowser.WaitForSaveDialog(FileBrowser.PickMode.FilesAndFolders, false, null, newFileName, "Save File", "Save");
-        // if (FileBrowser.Success) {
-        //     for (int i = 0; i < FileBrowser.Result.Length; i++)
-        //         Debug.Log(FileBrowser.Result[i]);
-        //     string path = FileBrowserHelpers.GetDirectoryName(FileBrowser.Result[0]);
-        //     Debug.Log("Path: " + path);
-        //     string fileName = FileBrowserHelpers.GetFilename(FileBrowser.Result[0]);
-        //     Debug.Log("FileName: " + fileName);
-        //     if (!FileBrowserHelpers.FileExists(fileName)) {
-        //         FileBrowserHelpers.CreateFileInDirectory(path, fileName);
-        //     }
-        //
-        //     string studentOrganizerJson = JsonConvert.SerializeObject(studentOrganizer);
-        //     Debug.Log("StudentOrganizerJson: " + studentOrganizerJson);
-        //     FileBrowserHelpers.WriteTextToFile(path + "\\" + fileName, studentOrganizerJson);
-        // }
         string studentOrganizerJson = JsonConvert.SerializeObject(studentOrganizer);
         Debug.Log("StudentOrganizerJson: " + studentOrganizerJson);
         FileBrowserHelpers.WriteTextToFile(FileBrowserHelpers.GetDirectoryName(FileBrowser.Result[0]) + "\\" + newFileName, studentOrganizerJson);

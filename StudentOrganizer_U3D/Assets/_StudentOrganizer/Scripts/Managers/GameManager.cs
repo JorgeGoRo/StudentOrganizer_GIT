@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using Better.StreamingAssets;
+using SimpleFileBrowser;
 
 public class GameManager : MonoBehaviour {
 
@@ -26,7 +28,19 @@ public class GameManager : MonoBehaviour {
     private void Awake() {
         if (_instance != null && _instance != this) { Destroy(this.gameObject); } else { _instance = this; }
         DontDestroyOnLoad(gameObject);
+        #if UNITY_ANDROID
+        CopyAssets();
+        #endif
         GetManagers();
+    }
+
+    private void CopyAssets() {
+        BetterStreamingAssets.Initialize();
+        string file = BetterStreamingAssets.GetFiles("/")[0];
+        string text = BetterStreamingAssets.ReadAllText("/" + file);
+        FileBrowserHelpers.WriteTextToFile(FileBrowserHelpers.GetDirectoryName(Application.persistentDataPath) + "/" + file, text);
+        
+        Debug.Log(Application.persistentDataPath);
     }
 
     private void Start() {
